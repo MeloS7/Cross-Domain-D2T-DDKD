@@ -207,3 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 Cross-Domain-D2T-DDKD/data/
+
+# Ignore macOS system files (.DS_Store)
+.DS_Store
