@@ -8,7 +8,6 @@ We follow the expert suggestion and keep summarization as nominal (no ordinal or
   - System level: interval alpha over per-system average error counts (excluding [SUM]).
   - Summarization level: nominal alpha over summary labels (short/medium/none) from [SUM].
 
-Files expected: data/human_eval/human_annotations_annotator_{zk,claire,yifei}.jsonl
 """
 
 import argparse

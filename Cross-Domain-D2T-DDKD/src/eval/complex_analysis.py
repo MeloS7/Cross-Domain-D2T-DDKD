@@ -23,12 +23,6 @@ For each dataset:
       * using a Qwen tokenizer, compute token length of the *full* user prompt
       * report min / max / average token length per dataset
 
-You can run, from inner project root `joint_distill/`:
-
-  python joint_distill/src/data_analysis/complex_analysis.py \\
-      --base_dir joint_distill/data/test/quintd \\
-      --qwen_tokenizer Qwen/Qwen2-7B-Instruct
-
 If `transformers` or the tokenizer is not available, the script will still
 run the structural analyses and skip token-length statistics.
 """
@@ -295,7 +289,7 @@ def main() -> None:
     parser.add_argument(
         "--base_dir",
         type=str,
-        default="joint_distill/data/test/quintd",
+        default="data/test/quintd",
         help="Base directory where domain subfolders (owid, weather, gsmarena, ...) live.",
     )
     parser.add_argument(

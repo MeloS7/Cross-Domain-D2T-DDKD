@@ -5,7 +5,7 @@ at instance-level and system-level on the 240-instance human eval set.
 
 Data:
   - Human annotations:
-      data/human_eval/human_annotations_annotator_{zk,claire,yifei}.jsonl
+      data/human_eval/human_annotations_annotator_{z,c,y}.jsonl
   - Selected indices (per domain):
       data/human_eval/human_eval_indices.json
   - GPT-5.1 eval files (per domain, 4 systems):

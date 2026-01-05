@@ -16,7 +16,7 @@ For a given dataset, this script:
       * example-level: concatenate per-sample error counts to get r_example;
       * system-level: average errors per sample per system to get r_system.
 
-Directory layout (run from inner project root `joint_distill/`):
+Directory layout (run from inner project root `Cross-Domain-D2T-DDKD/`):
 
   data/model_outputs/quintd/{dataset}/
     ├── outputs/

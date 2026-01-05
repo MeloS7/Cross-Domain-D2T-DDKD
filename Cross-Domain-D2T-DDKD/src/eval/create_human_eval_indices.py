@@ -26,9 +26,9 @@ Goals:
          - error span counts per type
          - number of examples containing at least one error of that type
 
-Usage (from inner project root `joint_distill/`):
+Usage (from inner project root `Cross-Domain-D2T-DDKD/`):
 
-    python -m joint_distill.src.eval.create_human_eval_set \\
+    python -m Cross-Domain-D2T-DDKD.src.eval.create_human_eval_set \\
         --base_dir . \\
         --seed 42
 
@@ -426,7 +426,7 @@ def build_default_domain_config(base_dir: str) -> Dict[str, Dict[str, str]]:
         ...
       }
     """
-    # Paths are relative to inner project root `joint_distill/`
+    # Paths are relative to inner project root `Cross-Domain-D2T-DDKD/`
     rel_paths_gpt = {
         "owid": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_32b_gpt-5.1.jsonl",
         "gsmarena": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_32b_gpt-5.1.jsonl",
