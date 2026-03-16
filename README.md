@@ -7,6 +7,7 @@ We provide the following resources:
 - Human evaluation set and annotation results
 - Model outputs and LLM-as-a-judge annotations
 - QUINTD-1 training and test data
+- QUINTD-5 training data
 
 Since the data folder is too large, we provide the .zip file.
 
