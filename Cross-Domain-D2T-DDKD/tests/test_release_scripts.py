@@ -18,6 +18,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.eval import (  # noqa: E402
+    IAA_compute,
     LLM_eval_CC,
     LLM_eval_OpenRouter,
     analyze_cc,
@@ -34,6 +35,49 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
         "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows),
         encoding="utf-8",
     )
+
+
+class HumanAnnotatorPrivacyTests(unittest.TestCase):
+    def test_iaa_loader_merges_neutral_files_and_preserves_full_records(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            instance_id = "gsmarena|7|system"
+            expected = {}
+            for annotator in ("1", "2", "3"):
+                record = {
+                    "annotator_id": f"annotator_{annotator}",
+                    "instance_id": instance_id,
+                    "dataset": "quintd_gsmarena_test",
+                    "model": "system",
+                    "table_idx": 7,
+                    "system_name": "system",
+                    "input_text": "A table input.",
+                    "output_text": "An example output.",
+                    "errors": [
+                        {
+                            "reason": "incorrect value",
+                            "text": "example",
+                            "type": 0,
+                            "start": 3,
+                        },
+                        {
+                            "reason": "summary label",
+                            "text": "[SUM]",
+                            "type": -1,
+                            "summary": "short",
+                        },
+                    ],
+                }
+                expected[annotator] = record
+                write_jsonl(
+                    root / f"human_annotations_annotator_{annotator}.jsonl",
+                    [record],
+                )
+
+            merged = IAA_compute.load_data(root)
+
+            self.assertEqual(set(merged), {instance_id})
+            self.assertEqual(merged[instance_id], expected)
 
 
 class StubClient:

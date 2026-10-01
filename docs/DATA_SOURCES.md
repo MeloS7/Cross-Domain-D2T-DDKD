@@ -1,6 +1,6 @@
 # Data sources and attribution
 
-The release contains prepared inputs, synthetic training examples, saved model
+The release contains prepared inputs, saved model
 outputs, and evaluation annotations for *Cross-Domain, Multi-Task Data-to-Text
 Generation without In-Domain Training Data* (Song, Efimov-Zhang, and Gardent,
 Findings of EMNLP 2026).
@@ -9,8 +9,8 @@ Findings of EMNLP 2026).
 
 | Released resource | Source and attribution | Terms |
 | --- | --- | --- |
-| WebNLG originals and prepared SFT examples (`data/train/webnlg_*.json`, `data/train/SFT/`) | Gardent et al.; [official WebNLG corpus](https://gitlab.com/shimorina/webnlg-dataset), release 3.0 | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), as stated in the [upstream README](https://gitlab.com/shimorina/webnlg-dataset/-/blob/master/README.md). Prepared examples adapt the serialization and prompts. |
-| QUINTD-1 inputs and their prepared variants (`data/test/quintd/`, `data/train/quintd/`) | Kasner and Dušek; [QUINTD](https://github.com/kasnerz/quintd), introduced in [Beyond Traditional Benchmarks](https://arxiv.org/abs/2401.10186) | The upstream repository distributes its code under MIT. Underlying records originate from the providers below; that code license does not replace their data terms. |
+| WebNLG (used for source-domain supervision; obtain separately) | Gardent et al.; [official WebNLG corpus](https://gitlab.com/shimorina/webnlg-dataset), release 3.0 | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), as stated in the [upstream README](https://gitlab.com/shimorina/webnlg-dataset/-/blob/master/README.md). WebNLG copies are omitted from this release. |
+| QUINTD-1 test inputs (`data/test/quintd/`) | Kasner and Dušek; [QUINTD](https://github.com/kasnerz/quintd), introduced in [Beyond Traditional Benchmarks](https://arxiv.org/abs/2401.10186) | The upstream repository distributes its code under MIT. Underlying records originate from the providers below; that code license does not replace their data terms. |
 | QUINTD-5 development inputs (`data/train/quintd5/`) | Additional records collected for this paper using the QUINTD collection procedure | The same source providers and task definitions as QUINTD-1; 500 development examples per domain. |
 
 QUINTD source providers, following the [upstream domain list](https://github.com/kasnerz/quintd#datasets):
@@ -29,10 +29,10 @@ to the data archive.
 
 ## Artifacts produced for this paper
 
-- Teacher-generated training examples pair structured inputs with synthetic
-  text; target-domain human reference texts are not supplied.
+- QUINTD-5 supplies real structured inputs; target-domain human reference texts
+  and bulk teacher-generated training pairs are not supplied.
 - Saved generations and LLM annotations support analysis without new API calls.
-- Human annotation files use anonymous annotator identifiers. The released
+- Human annotation files use neutral numeric annotator identifiers. The released
   selection contains 60 inputs and 240 system outputs, with three annotators.
 - Coverage files retain failed-parse markers from the original evaluation.
   Analysis excludes invalid values and reports valid counts.
@@ -45,6 +45,6 @@ Please cite this paper and the upstream resources used in your work.
 
 The archive contains public relative paths only. `data_manifest.json` beside
 `data.zip` records file sizes, record counts for JSONL files, SHA-256 checksums,
-and the archive checksum. Prepared chat examples are sufficient for the
-released training workflows; raw collection snapshots and routine intermediate
-conversion files are omitted.
+and the archive checksum. See the [data guide](DATA.md) for the inventory and
+release scope. The archive supports analysis of saved results; retraining
+requires separately obtained or prepared training examples.

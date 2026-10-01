@@ -10,7 +10,7 @@ New outputs should be written to `results/`.
 | Paper result | Released artifacts | Analysis |
 | --- | --- | --- |
 | Main faithfulness comparison (Table 4 and per-domain appendix tables) | `data/model_outputs/quintd/*/eval_res/`; 500-input results in `data/model_outputs/quintd5/*/eval_res/` | `summarize_table4.py`, `analyze_judge_output.py`, `compute_norm.py` |
-| QUINTD-5 construction (Appendix D) | `data/train/quintd5/*/*_dev_500_chat_format.jsonl`; 500 chat examples per domain | Prepared input files; teacher examples are in the adjacent ZS/SFT subdirectories |
+| QUINTD-5 construction (Appendix D) | `data/train/quintd5/*/*_dev_500_chat_format.jsonl`; 500 chat inputs per domain | Prepared structured inputs; bulk teacher-generated training pairs are omitted |
 | LLM faithfulness agreement (Appendix H) | Paired GPT-5.1/Gemini annotations and their generated texts under `data/model_outputs/quintd/` | `eval_judges_agreement.py` |
 | Human evaluation and agreement (Appendix I, including Table 12) | `data/human_eval/` | `IAA_compute.py`, `human_judge_agreement.py` |
 | Output-length analysis | `data/model_outputs/quintd/*/outputs/` | `eval_output_length.py` |
@@ -42,11 +42,12 @@ NormAvg for error counts uses domain-wise min–max normalization, averaged acro
 domains; lower is better. These values are calculated from the released
 annotations rather than hardcoded paper numbers.
 
-QUINTD-5 provides five input files and ten teacher-generated training files.
-Each file has 500 records. Teacher training files contain the full `messages`
-conversation, including the generated assistant response; duplicated inference
-metadata is omitted. Original model responses and evaluation annotations are
-preserved in the corresponding results directories.
+QUINTD-5 provides five input files with 500 records each. Each `messages`
+conversation ends with a fixed assistant prefix, not a generated reference.
+Teacher-generated training pairs are omitted from this lightweight release.
+Original test-set model responses and evaluation annotations are preserved in
+the corresponding results directories. See the [data guide](DATA.md) for the
+full release scope.
 
 ## Faithfulness, human evaluation, and lengths
 
@@ -127,8 +128,9 @@ domain and available GPU memory.
 
 Qwen examples use the reasoning-aware loss scale and response prefix from the
 supplied templates. For Gemma, set `LOSS_SCALE=last_round` and provide an
-appropriate `RESPONSE_PREFIX` without Qwen's thinking tokens. Use the released
-Gemma-prepared SFT examples when training Gemma on WebNLG. Consult the scripts
+appropriate `RESPONSE_PREFIX` without Qwen's thinking tokens. Prepare WebNLG
+examples for the chosen model family and supply them via `TRAIN_DATASET`;
+WebNLG copies and bulk synthetic training pairs are omitted. Consult the scripts
 for their complete environment-variable defaults and required variables.
 
 The analysis lockfile records the Python 3.12 CPU environment used to verify

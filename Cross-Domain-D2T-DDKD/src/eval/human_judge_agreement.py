@@ -5,7 +5,7 @@ at instance-level and system-level on the 240-instance human eval set.
 
 Data:
   - Human annotations:
-      data/human_eval/human_annotations_annotator_{z,c,y}.jsonl
+      data/human_eval/human_annotations_annotator_{1,2,3}.jsonl
   - Selected indices (per domain):
       data/human_eval/human_eval_indices.json
   - GPT-5.1 eval files (per domain, 4 systems):
@@ -37,7 +37,7 @@ try:  # Support both package imports and direct script execution.
 except ImportError:  # pragma: no cover - exercised by command-line use
     from path_utils import resolve_case_insensitive_path
 
-ANNOTATORS = ["z", "c", "y"]
+ANNOTATORS = ["1", "2", "3"]
 TYPES = [0, 1, 2, 3]
 
 
@@ -301,7 +301,10 @@ def main():
         "--base_dir",
         type=str,
         default=".",
-        help="Base dir where 'data/' lives (default: current directory).",
+        help=(
+            "Base dir where 'data/' lives (default: current directory); expects "
+            "human_annotations_annotator_1.jsonl, _2.jsonl, and _3.jsonl."
+        ),
     )
     args = parser.parse_args()
 

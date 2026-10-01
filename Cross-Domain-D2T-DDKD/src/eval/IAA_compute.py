@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Compute multi-annotator IAA (3 annotators) using Krippendorff's Alpha.
+Compute multi-annotator IAA for annotators 1, 2, and 3 using Krippendorff's Alpha.
 
 We follow the expert suggestion and keep summarization as nominal (no ordinal order):
   - Token level: nominal alpha over token labels {0=no error, 1/2/3=error type}, [SUM] skipped.
@@ -20,7 +20,7 @@ from typing import Dict, List
 import pandas as pd
 import simpledorff
 
-ANNOTATORS = ["z", "c", "y"]
+ANNOTATORS = ["1", "2", "3"]
 SUMMARY_LABELS = {"none", "short", "medium"}
 # Token labels: 0 = no error, 1 = type0, 2 = type1, 3 = type2, 4 = type3
 # (so type0 is not conflated with "no error")
@@ -28,7 +28,7 @@ SUMMARY_LABELS = {"none", "short", "medium"}
 
 def load_data(base_dir: Path) -> Dict[str, Dict[str, dict]]:
     """
-    Load all annotator files.
+    Load human_annotations_annotator_1.jsonl, _2.jsonl, and _3.jsonl.
     Return: {instance_id: {annotator: record}}, only keeping instances annotated by all.
     """
     merged: Dict[str, Dict[str, dict]] = defaultdict(dict)
@@ -108,7 +108,10 @@ def main():
         "--base_dir",
         type=str,
         default="data/human_eval",
-        help="Directory containing human_annotations_annotator_{name}.jsonl",
+        help=(
+            "Directory containing human_annotations_annotator_1.jsonl, _2.jsonl, "
+            "and _3.jsonl"
+        ),
     )
     args = parser.parse_args()
 
