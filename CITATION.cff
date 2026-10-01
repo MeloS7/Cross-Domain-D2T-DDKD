@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this code or the released artifacts."
+title: "Cross-Domain, Multi-Task Data-to-Text Generation without In-Domain Training Data"
+type: software
+license: MIT
+authors:
+  - family-names: Song
+    given-names: Yifei
+  - family-names: Efimov-Zhang
+    given-names: Kun
+  - family-names: Gardent
+    given-names: Claire
+repository-code: "https://github.com/MeloS7/Cross-Domain-D2T-DDKD"
+url: "https://arxiv.org/abs/2608.23391"
+preferred-citation:
+  type: article
+  title: "Cross-Domain, Multi-Task Data-to-Text Generation without In-Domain Training Data"
+  authors:
+    - family-names: Song
+      given-names: Yifei
+    - family-names: Efimov-Zhang
+      given-names: Kun
+    - family-names: Gardent
+      given-names: Claire
+  year: 2026
+  journal: "arXiv"
+  doi: "10.48550/arXiv.2608.23391"
+  url: "https://arxiv.org/abs/2608.23391"

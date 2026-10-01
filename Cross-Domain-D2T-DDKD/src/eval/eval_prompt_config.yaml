@@ -28,7 +28,7 @@ prompt_template: |
   ```
   output:
   ```
-  {{ "errors": [{{"reason": "The data mentions that the actor was born on 1981", "text": "1991", "type": 0}}, {{"reason": "Misleadingly suggests that the actor is not alive", "text": "used to be", type: 2}}, {{"reason": "Popularity is not mentioned in the data", "text": "popular", type: 1}}, {{"reason", "Nationality is not mentioned in the data", "text": "Indian", type: 1}}, {{"reason": "The note is superfluous", "text": "The data comes from a knowledge graph.", type: 3}}] }}
+  {{ "errors": [{{"reason": "The data mentions that the actor was born on 1981", "text": "1991", "type": 0}}, {{"reason": "Misleadingly suggests that the actor is not alive", "text": "used to be", "type": 2}}, {{"reason": "Popularity is not mentioned in the data", "text": "popular", "type": 1}}, {{"reason": "Nationality is not mentioned in the data", "text": "Indian", "type": 1}}, {{"reason": "The note is superfluous", "text": "The data comes from a knowledge graph.", "type": 3}}] }}
   ```
 
   Notes:

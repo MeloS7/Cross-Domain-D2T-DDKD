@@ -1,0 +1,10 @@
+# Dependencies imported by the analysis and OpenRouter API scripts.
+# This is not a lockfile for the original experiments.
+# Install MS-Swift/PyTorch/vLLM separately for GPU training and inference.
+numpy
+openai
+pandas
+PyYAML
+scipy
+simpledorff
+tqdm

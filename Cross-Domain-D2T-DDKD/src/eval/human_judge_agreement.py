@@ -32,6 +32,11 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+try:  # Support both package imports and direct script execution.
+    from .path_utils import resolve_case_insensitive_path
+except ImportError:  # pragma: no cover - exercised by command-line use
+    from path_utils import resolve_case_insensitive_path
+
 ANNOTATORS = ["z", "c", "y"]
 TYPES = [0, 1, 2, 3]
 
@@ -122,7 +127,8 @@ def build_paths(base_dir: Path) -> Dict[str, Dict[str, str]]:
       primary, zero_shot_1.7B, sft_lora_1.7B, ddkd_best
     """
     def p(rel: str) -> str:
-        return str(base_dir / rel)
+        requested = base_dir / rel
+        return resolve_case_insensitive_path(requested) or str(requested)
 
     cfg = {
         "owid": {
@@ -546,5 +552,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 

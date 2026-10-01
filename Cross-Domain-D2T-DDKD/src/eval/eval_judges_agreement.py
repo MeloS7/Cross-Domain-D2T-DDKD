@@ -70,6 +70,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 
+try:  # Support both package imports and direct script execution.
+    from .path_utils import resolve_case_insensitive_path
+except ImportError:  # pragma: no cover - exercised by command-line use
+    from path_utils import resolve_case_insensitive_path
+
 
 @dataclass
 class SystemConfig:
@@ -141,6 +146,10 @@ def build_system_configs(base_dir: str, dataset: str) -> List[SystemConfig]:
         for fname in os.listdir(subdir):
             if not fname.endswith(".jsonl"):
                 continue
+            # Coverage files use a similar naming convention but are a
+            # different metric and must not be treated as faithfulness judges.
+            if "_cc_" in fname.casefold():
+                continue
             m = pattern.match(fname)
             if not m:
                 continue
@@ -151,28 +160,41 @@ def build_system_configs(base_dir: str, dataset: str) -> List[SystemConfig]:
             mid1 = m.group("mid1") or ""
             mid2 = m.group("mid2") or ""
             mid = (mid1 + mid2) or ""
-            judge = m.group("judge")
+            judge_raw = m.group("judge")
+            judge = "gemini-2.5-pro" if judge_raw.startswith("gemini") else "gpt-5.1"
             size_norm = size.upper()
 
             # Keep only 1.7B for ddkd variants; skip 8B/32B
             if method in ("ddkd_zero_shot", "ddkd_sft_lora") and size_norm != "1.7B":
                 continue
 
-            key = (method, size_norm, mid)
+            key = (method, size_norm, mid.casefold())
+            if judge in grouped[key]:
+                raise ValueError(
+                    f"Multiple {judge} files match dataset={dataset}, "
+                    f"method={method}, size={size_norm}, variant={mid!r}: "
+                    f"{grouped[key][judge]!r} and {fname!r}"
+                )
             grouped[key][judge] = os.path.join(subdir, fname)
 
     if not grouped:
         raise ValueError(f"No eval_res files found under {eval_root} for dataset={dataset}")
 
-    for (method, size, mid), judges in grouped.items():
+    for (method, size, mid_key), judges in grouped.items():
         if "gpt-5.1" not in judges or "gemini-2.5-pro" not in judges:
             print(
                 f"[Warning] For dataset={dataset}, system "
-                f"(method={method}, size={size}, mid='{mid}') is missing "
+                f"(method={method}, size={size}, mid='{mid_key}') is missing "
                 f"one of the judges: found={list(judges.keys())}, skip."
             )
             continue
 
+        # Use the actual mid captured from the source filenames to build the
+        # candidate outputs. Its case is normalized below if necessary.
+        judge_name = os.path.basename(judges["gpt-5.1"])
+        matched = pattern.match(judge_name)
+        assert matched is not None
+        mid = (matched.group("mid1") or "") + (matched.group("mid2") or "")
         variant = (mid.lstrip("_") if mid else "")
 
         # Two common base_name arrangements:
@@ -195,19 +217,23 @@ def build_system_configs(base_dir: str, dataset: str) -> List[SystemConfig]:
         candidates.append(os.path.join(eval_dir, base_name_1 + "_responses.jsonl"))
         candidates.append(os.path.join(eval_dir, base_name_2 + "_responses.jsonl"))
 
-        outputs_path: Optional[str] = None
-        for cand in candidates:
-            if os.path.isfile(cand):
-                outputs_path = cand
-                break
-
+        resolved_candidates = {
+            resolved
+            for candidate in candidates
+            if (resolved := resolve_case_insensitive_path(candidate)) is not None
+        }
+        if len(resolved_candidates) > 1:
+            raise ValueError(
+                f"Multiple generation files match system "
+                f"(dataset={dataset}, method={method}, size={size}, mid='{mid}'): "
+                f"{sorted(resolved_candidates)}"
+            )
+        outputs_path = next(iter(resolved_candidates), None)
         if outputs_path is None:
-            print(
-                f"[Warning] Cannot find outputs (_responses.jsonl) for system "
-                f"(dataset={dataset}, method={method}, size={size}, mid='{mid}').\n"
-                f"  Tried: {candidates}\n"
-                f"  -> Will skip word-level agreement for this system, "
-                f"but still use it for example/system-level agreement."
+            raise FileNotFoundError(
+                f"Cannot find outputs (_responses.jsonl) for system "
+                f"(dataset={dataset}, method={method}, size={size}, mid='{mid}'). "
+                f"Tried {len(candidates)} expected locations."
             )
 
         if method == "zero_shot":
@@ -1309,5 +1335,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

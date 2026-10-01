@@ -1,6 +1,5 @@
 import argparse
 import json
-import matplotlib.pyplot as plt
 
 ERROR_TYPES = {
     0: "Incorrect fact",

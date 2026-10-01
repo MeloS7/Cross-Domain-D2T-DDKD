@@ -44,6 +44,11 @@ import random
 from collections import defaultdict
 from typing import Dict, List, Tuple, Set
 
+try:  # Support both package imports and direct script execution.
+    from .path_utils import resolve_case_insensitive_path
+except ImportError:  # pragma: no cover - exercised by command-line use
+    from path_utils import resolve_case_insensitive_path
+
 
 # Semantic labels for four error types, consistent with eval_judges_agreement.py
 ERROR_TYPE_LABELS = {
@@ -437,8 +442,13 @@ def build_default_domain_config(base_dir: str) -> Dict[str, Dict[str, str]]:
 
     config: Dict[str, Dict[str, str]] = {}
     for domain, rel_gpt in rel_paths_gpt.items():
-        gpt_path = os.path.join(base_dir, rel_gpt)
-        gemini_path = gpt_path.replace("gpt-5.1", "gemini-2.5-pro")
+        requested_gpt_path = os.path.join(base_dir, rel_gpt)
+        gpt_path = resolve_case_insensitive_path(requested_gpt_path) or requested_gpt_path
+        requested_gemini_path = gpt_path.replace("gpt-5.1", "gemini-2.5-pro")
+        gemini_path = (
+            resolve_case_insensitive_path(requested_gemini_path)
+            or requested_gemini_path
+        )
         config[domain] = {"gpt": gpt_path, "gemini": gemini_path}
     return config
 
@@ -451,7 +461,8 @@ def build_additional_domain_paths(base_dir: str) -> Dict[str, Dict[str, str]]:
       - ddkd_best_gpt: best distilled model (DDKD)
     """
     def p(rel: str) -> str:
-        return os.path.join(base_dir, rel)
+        requested = os.path.join(base_dir, rel)
+        return resolve_case_insensitive_path(requested) or requested
 
     return {
         "owid": {
@@ -604,9 +615,27 @@ def main():
         ddkd_best_gpt_records = load_jsonl(ddkd_best_gpt_path)
 
         # Corresponding Gemini-2.5-pro evaluation paths (via suffix replacement)
-        fallback_gemini_path = fallback_gpt_path.replace("gpt-5.1", "gemini-2.5-pro")
-        sft_small_gemini_path = sft_small_gpt_path.replace("gpt-5.1", "gemini-2.5-pro")
-        ddkd_best_gemini_path = ddkd_best_gpt_path.replace("gpt-5.1", "gemini-2.5-pro")
+        fallback_gemini_requested = fallback_gpt_path.replace(
+            "gpt-5.1", "gemini-2.5-pro"
+        )
+        sft_small_gemini_requested = sft_small_gpt_path.replace(
+            "gpt-5.1", "gemini-2.5-pro"
+        )
+        ddkd_best_gemini_requested = ddkd_best_gpt_path.replace(
+            "gpt-5.1", "gemini-2.5-pro"
+        )
+        fallback_gemini_path = (
+            resolve_case_insensitive_path(fallback_gemini_requested)
+            or fallback_gemini_requested
+        )
+        sft_small_gemini_path = (
+            resolve_case_insensitive_path(sft_small_gemini_requested)
+            or sft_small_gemini_requested
+        )
+        ddkd_best_gemini_path = (
+            resolve_case_insensitive_path(ddkd_best_gemini_requested)
+            or ddkd_best_gemini_requested
+        )
 
         if not os.path.isfile(fallback_gemini_path):
             print(
@@ -699,5 +728,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

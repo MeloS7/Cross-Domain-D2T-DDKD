@@ -39,6 +39,11 @@ import json
 import os
 from typing import Dict, List
 
+try:  # Support both package imports and direct script execution.
+    from .path_utils import resolve_case_insensitive_path
+except ImportError:  # pragma: no cover - exercised by command-line use
+    from path_utils import resolve_case_insensitive_path
+
 
 def load_jsonl(path: str) -> List[dict]:
     with open(path, "r", encoding="utf-8") as f:
@@ -87,7 +92,8 @@ def build_system_output_paths(base_dir: str) -> Dict[str, Dict[str, Dict[str, st
     """
 
     def p(rel: str) -> str:
-        return os.path.join(base_dir, rel)
+        requested = os.path.join(base_dir, rel)
+        return resolve_case_insensitive_path(requested) or requested
 
     cfg: Dict[str, Dict[str, Dict[str, str]]] = {}
 
@@ -262,7 +268,7 @@ def main() -> None:
         indices_sorted = sorted(indices)
 
         # Load inputs (chat format)
-        input_path = os.path.join(
+        requested_input_path = os.path.join(
             base_dir,
             "data",
             "test",
@@ -270,6 +276,7 @@ def main() -> None:
             domain,
             f"{domain}_test_chat_format.jsonl",
         )
+        input_path = resolve_case_insensitive_path(requested_input_path) or requested_input_path
         if not os.path.isfile(input_path):
             raise FileNotFoundError(f"Input chat_format file not found: {input_path}")
         input_records = load_jsonl(input_path)
@@ -336,5 +343,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
 

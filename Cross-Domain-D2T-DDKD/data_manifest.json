@@ -1,0 +1,3543 @@
+{
+  "schema_version": 1,
+  "archive": "data.zip",
+  "archive_sha256": "433a8e7a27897f1be3807b6689573918ef6d1bf39ca329e498f201d1d47c34f0",
+  "file_count": 507,
+  "uncompressed_bytes": 1417469402,
+  "files": [
+    {
+      "path": "data/README.md",
+      "bytes": 3335,
+      "sha256": "63659867fb854f040225f1415255f189fb03d75cd37f615f0a6233c01ab40126",
+      "group": "documentation"
+    },
+    {
+      "path": "data/human_eval/human_annotations_annotator_c.jsonl",
+      "bytes": 450877,
+      "sha256": "0301e0aa4db3358a8715e56bbf251cb1c571bfbc03bd5a890c0bfed823b48ffb",
+      "group": "existing_release",
+      "records": 240
+    },
+    {
+      "path": "data/human_eval/human_annotations_annotator_y.jsonl",
+      "bytes": 437192,
+      "sha256": "e9be959c80d5f90cd5e71b89648ac94b13c7bfc0c8cff76bb33a4f277971fe8a",
+      "group": "existing_release",
+      "records": 240
+    },
+    {
+      "path": "data/human_eval/human_annotations_annotator_z.jsonl",
+      "bytes": 446520,
+      "sha256": "12d3c10e69812b651db3f4a7d57cd84198994a103654a5a638db7438ba126f62",
+      "group": "existing_release",
+      "records": 240
+    },
+    {
+      "path": "data/human_eval/human_eval_analysis.py",
+      "bytes": 7012,
+      "sha256": "b2ef807c874f4c0d0f12a4578f437ff60a30b96c574118f8ae847bd476b08899",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/human_eval/human_eval_dataset.json",
+      "bytes": 536215,
+      "sha256": "2e0df3c1a0f96bf065c4a29b1c15a441e3ff58e7012b320160975d38ebeea9b0",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/human_eval/human_eval_indices.json",
+      "bytes": 574,
+      "sha256": "ab64b379ca637985ec931822dea54ba7b42ea0c0916d3402c1a12ecbab0a0651",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/human_eval/streamlit_annotation.py",
+      "bytes": 20095,
+      "sha256": "ac4662836cb5bbced1a48eccbcc4361c3abea1825994020f855a2afd8aa16d10",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 34882,
+      "sha256": "b876b109f540f0ea583f215633cac489f17f8c237dc8e5ddf23dbe1ad5ced359",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 33954,
+      "sha256": "3342945c5068165c0e443c6e94673447bb27c9d7c455e963ea2a754e18a76200",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 26740,
+      "sha256": "c3ee9b667e403f94e92fd4677c05130aae099144682136f0ec06572d6f1ef917",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 25631,
+      "sha256": "a460bc015a9b8d7fc33e1e8aff415fcf48a166b628cfebd25d1934948ec99063",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 34398,
+      "sha256": "b88da58bfe9043eb0e2b624ab5cad03c4710e0700db26f3831e1d2c2a6c111da",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 31005,
+      "sha256": "cca072117107ae760826b2a161c1775a8685550645090495bab7c015ecdb89ab",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 27023,
+      "sha256": "4f8205c5e8f3c3b60fdd9d2d7ac4af2f8deb0109bc307a3cc9b6aed8c60c437c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 29587,
+      "sha256": "dd2e33144b7a8cd5cc2137a7841bef55e66fb8d77a4c4ac0bb94d1eb897f87f4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 29141,
+      "sha256": "212f9d5033e6862d10f59f3fd29b3dc5fd07a4cb58c1856cde1c3f78bf489bfa",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 27970,
+      "sha256": "0436aac691f97b0e9f28eb6426e6a29a29b3e8fe48ccdf6c736779047cd0de01",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 19847,
+      "sha256": "e3cecfa1d349d81b5ddffa4f4645ca11c3034c200356d0723fe29fd1827def71",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 22441,
+      "sha256": "c7fe42e4692e13dd1996a5a47a9029152c4777645080dcf00129ce7609c47780",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_pert_cc_gemini2.5-pro.jsonl",
+      "bytes": 71987,
+      "sha256": "f31fc64836c3f2374e6aa1fd9005189a76a88d530bb5ec290edd3329ce6fa3fa",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_pert_cc_gpt5.1.jsonl",
+      "bytes": 73515,
+      "sha256": "4edda00162daaf2e75b836d3f33944147b47f88e66c8ef754118eedfefb8fd48",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 21041,
+      "sha256": "3585bcf9e74d02c55266786460cd569049331971e77e170ef5cf227e0cd162d1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 20157,
+      "sha256": "909fb24b29dee8ee813822d8ff64a49ad2a37d770c8dc721820798129a45c6b9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 25319,
+      "sha256": "8f5f6e45657438b4c449e5b67e228cd6141c6f44643a12c4d9c9fc6c57fa480b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 23022,
+      "sha256": "35e8bba042d4c0e560ed05c8bb12cdd53c94158ee838533347d5babb8d4f51e9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/test_gsmarena_gemma3_1b_it_ZS_mixed_gemini2.5-pro.jsonl",
+      "bytes": 39943,
+      "sha256": "7fe46fee5edef2c0c000ca8077c85dd71539f382f6f17a77dc6c047f269549e1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/test_gsmarena_gemma3_1b_it_ZS_mixed_gpt-5.1.jsonl",
+      "bytes": 34652,
+      "sha256": "bcfa693ffcea47fdffa64c44ae0d1e49389fc0f127bfd11bc7a960e2915a506d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_1.7b_cc_gemini2.5-pro.jsonl",
+      "bytes": 71900,
+      "sha256": "0c9fe802aebb0e6a0af822483796b29580da3ea12e1f3440e4b9b76b3db16725",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_1.7b_cc_gpt5.1.jsonl",
+      "bytes": 72952,
+      "sha256": "d574b6ba02f146ef9e7d8159a5e85f7369751bd6f59d06651c7eb34718ac760f",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_1.7b_gemini-2.5-pro.jsonl",
+      "bytes": 54530,
+      "sha256": "6cbc914b1cf62b561330f1beaed26f8e6a0aa51cd49e1e1331d70df109b2c285",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_1.7b_gpt-5.1.jsonl",
+      "bytes": 45330,
+      "sha256": "a782253b1ed62c9656e07f411b215cc9f4dad29c32bf32f396a40cf6ffae8b53",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_32b_gemini-2.5-pro.jsonl",
+      "bytes": 25259,
+      "sha256": "8ffb9e7d2fa52fab5b736207be4ef63a660830f8e383a290c6673cad9fcf4e82",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_32b_gpt-5.1.jsonl",
+      "bytes": 22203,
+      "sha256": "f79e8b3d0fcd01ade43c78c3fa87972d6af968421738dce9398adf54e5095370",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_8b_gemini-2.5-pro.jsonl",
+      "bytes": 40787,
+      "sha256": "4ab3d94cc18de1b7517a5c4e237a69f2a354428a43dd70693afa775d4341ad9f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_8b_gpt-5.1.jsonl",
+      "bytes": 34651,
+      "sha256": "350220aca0a788115e6f2512b3140878d9576964f2a3a48968d3480181da7ae3",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/test_gsmarena_gemma3_1B_sft_webnlg_json_gemini2.5-pro.jsonl",
+      "bytes": 73630,
+      "sha256": "7f79e9b6e5f4ad1a793867f408a22b32cc9056dff86a6f7222104d92367250db",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/test_gsmarena_gemma3_1B_sft_webnlg_json_gpt-5.1.jsonl",
+      "bytes": 65022,
+      "sha256": "983d70840e36ebabc0ba1375ca37e9128d26635a8c249ba6f7e7540875042ea2",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/test_gsmarena_gemma3_27B_sft_webnlg_json_gemini2.5-pro.jsonl",
+      "bytes": 20763,
+      "sha256": "3c5d4cc2e1dff83770ad54c2d05dca83aa9cdf3a4c0e50b20de34eca6e1468aa",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/sft_lora/test_gsmarena_gemma3_27B_sft_webnlg_json_gpt-5.1.jsonl",
+      "bytes": 19057,
+      "sha256": "15fddf6d75bf03a249a4cee7b96642d8865cae0296e98de250eb09bfaf3fdb98",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_gpt4.1_gpt-5.1.jsonl",
+      "bytes": 28150,
+      "sha256": "88da6d277ed081109bb878c0950435a1722c52752b2852e88637596faf796f5d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_1.7b_cc_gemini2.5-pro.jsonl",
+      "bytes": 73048,
+      "sha256": "7d626edd5f5318193c92087a944e914792ae3aebfff4614152b363b75fbadb44",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_1.7b_cc_gpt5.1.jsonl",
+      "bytes": 75939,
+      "sha256": "25925a0f27cc8b6e41506aa92f6bb0909ec798935e7c6a4a46e3c1131c9b151e",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_1.7b_gemini-2.5-pro.jsonl",
+      "bytes": 36228,
+      "sha256": "cfd578fa5c438425aa3eb65118d5b4c70fcfe500d4ac025e6fdbb1948be84ddb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_1.7b_gpt-5.1.jsonl",
+      "bytes": 31446,
+      "sha256": "8df177b97cf0cecbd9b87ac99567c277749d7431bbbc1068512369844eac302a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_32b_cc_gemini2.5-pro.jsonl",
+      "bytes": 71696,
+      "sha256": "e9e4da50e577c7141e7565dff5b58ba04772ebc0223dcacd1a3321a37f6736b5",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_32b_cc_gpt5.1.jsonl",
+      "bytes": 71593,
+      "sha256": "64ea6e43b2aad7b71868d432188682762a82b0480cf809de2d2f1c0c7cae05a9",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_32b_gemini-2.5-pro.jsonl",
+      "bytes": 16451,
+      "sha256": "29de0e4bd283a1a121ae7c04e43341dcf677279b221226fe53b52104596ae310",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_32b_gpt-5.1.jsonl",
+      "bytes": 20299,
+      "sha256": "c4209e950591e4d7994716f43ed25e8e2d984ce5e0eb768df338322e61c47dc0",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_8b_gemini-2.5-pro.jsonl",
+      "bytes": 26002,
+      "sha256": "1f87c125156dcfdd939aecbb9673d9b10a212cc8a400ea51a341ef7152609279",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/gsmarena_zero_shot_qwen3_8b_gpt-5.1.jsonl",
+      "bytes": 30903,
+      "sha256": "32d2a80e34e23260806a4bce2702b303992c7ae787e86e01d492c46abda84b67",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/test_gsmarena_gemma3_1b_gemini2.5-pro.jsonl",
+      "bytes": 62585,
+      "sha256": "b26a61bc1fcd2e00493a5dadbf1c68e329829980e403f6983ff3ec63acaada32",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/test_gsmarena_gemma3_1b_gpt-5.1.jsonl",
+      "bytes": 68982,
+      "sha256": "b67c2422efb033e798b9902abd802bd696a46215bde9161f24968b7c3cd9df6b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/test_gsmarena_gemma3_27b_gemini2.5-pro.jsonl",
+      "bytes": 17652,
+      "sha256": "7414ec1d7dfb1c02268d8bbb4fe42b4714d9ec430f90495f249e84d6b21fa815",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/eval_res/zero_shot/test_gsmarena_gemma3_27b_gpt-5.1.jsonl",
+      "bytes": 19889,
+      "sha256": "95013963c5ed7411dff7c6cb1a64c20fde92524aa39d188be67061305876f4e3",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 369292,
+      "sha256": "dc0d457bf3989e82b2aebadd52fe5d8915ca50e3cb1c1dbf55ee9cfc83fb408b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 168286,
+      "sha256": "1e0956278f54c730063f9be35df5b75959b06f74606d5db4fc53d8e46a77c783",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 223800,
+      "sha256": "d69e91df598b89838202e5bc40be462920119ebee261fed569017b26de07ce50",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_sft_lora/gsmarena_ddkd_sft_lora_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 242210,
+      "sha256": "51590ae846e5067123c31f949fd57076522c129da2027cdf0c79312986e039e1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 106797,
+      "sha256": "c3e3e757245f0d633f8944b70e4afe1e8584c05dd7ea4418df479f92b29ec6a6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 107356,
+      "sha256": "8d39e494fd3613a938dde315418e0cbaff5f745d02bddca5499f114fbb47c62c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 101846,
+      "sha256": "058ae8a82495089f7ea08bd4d13c0945a292b18580fc15c55d64812fe4777eb4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_zero_shot/gsmarena_ddkd_zero_shot_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 105401,
+      "sha256": "62568a35ecf6edd19bba793ac0a1d8f4ba4116cb6b8bf6a0c5c12d0b5bcdde5f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/ddkd_zero_shot/gsmarena_test_gemma3_1b_it_ZS_mixed_responses.jsonl",
+      "bytes": 100373,
+      "sha256": "776e86c089156fbd1a1a11af1381d70050ecfba031a4d53955260aa6695c77a0",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_1.7b_responses.jsonl",
+      "bytes": 381180,
+      "sha256": "70bdfc2793bcb9171bde7a15aaf34dc221800f8e274d3b33ddcb05efe3077c6a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_32b_responses.jsonl",
+      "bytes": 75370,
+      "sha256": "36559bacdcc3cd0e395db7deeeefee4e046c1ba690ed5fed7819205aa5a71264",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/sft_lora/gsmarena_sft_lora_on_webnlg_json_qwen3_8b_responses.jsonl",
+      "bytes": 311311,
+      "sha256": "8d30876abb2b6afd64cb2c992c9cf7c79f71331be809b3cc8da70eea65d20604",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/sft_lora/gsmarena_test_gemma3_1B_sft_webnlg_json_responses.jsonl",
+      "bytes": 231975,
+      "sha256": "46b62b5c3a1d294fca51d8051ca927c314acb719331929295396f7af07eb4377",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/sft_lora/gsmarena_test_gemma3_27B_sft_webnlg_json_responses.jsonl",
+      "bytes": 76680,
+      "sha256": "ae722267fd6f686350165d989183ce0ee63ecff2f27f1448d1b146764bee12af",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/zero_shot/gsmarena_test_chat_format_gpt4.1_responses.jsonl",
+      "bytes": 98019,
+      "sha256": "fccc3e7ea8967126318f07b7c92735ca144eae1b0a8d316fd857652fba8f2116",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/zero_shot/gsmarena_test_gemma3_1b_responses.jsonl",
+      "bytes": 48051,
+      "sha256": "652821e7d70422d09a4920a11f54c3d12991c59bce18d602b2f58f742432c5b4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/zero_shot/gsmarena_zero_shot_qwen3_1.7b_responses.jsonl",
+      "bytes": 68916,
+      "sha256": "735420c686520bbe57e000c55047b42b6f3b56cf5d3f7fc5992784ebf0a15712",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/zero_shot/gsmarena_zero_shot_qwen3_32b_responses.jsonl",
+      "bytes": 103152,
+      "sha256": "b5ed1294020f17cd127f0ac6072c8de97a7c08e64465f7f8c286b1a94ec6f3a3",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/zero_shot/gsmarena_zero_shot_qwen3_8b_responses.jsonl",
+      "bytes": 81530,
+      "sha256": "7b42ae8dd5f058457c48c3fe8498ba3130de1c272a6707471a18d24e9774b1b2",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/gsmarena/outputs/zero_shot/test_gemma3_27b_responses.jsonl",
+      "bytes": 74761,
+      "sha256": "0158e7ee457f454c175aaa5ed70a2abfffc5bfa6e6144613a15a53d9bbf28d12",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 22579,
+      "sha256": "788919dfcd1493d129b1f196402d4311cae52a48e4b814a3fbcf95a29c82288d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 18213,
+      "sha256": "b71d7d23da7badf462ab5509512f6245d686e32c51d13f7d2cbdd1cf198d49de",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_mixed_cc_gemini2.5-pro.jsonl",
+      "bytes": 58921,
+      "sha256": "117bf290a4f2c72d779859ca70087ce06ad823e50e95d78ac0b0d9ad4b74aac5",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_mixed_cc_gpt5.1.jsonl",
+      "bytes": 67201,
+      "sha256": "6554b9b148933c96336453dfa4d866563ae7f40341d5fdda80a3ec7906350ee1",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 18236,
+      "sha256": "98f2ec4944ea0896e1a344f4eaa4059f9f59da24f154fc929e75f60073c4b790",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 13968,
+      "sha256": "709b485223d64dd4e6f7d4a150d35aa7019a2fc13616bee3dfccd385fbf8cb04",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 19012,
+      "sha256": "c50bd5dcbc4bd106a83ec0b81777515954c4119e1d802a549eeaae0357c2846d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 15795,
+      "sha256": "2b0bb6f65a6ac39d4b914ea638b95e855f41dd5c824fcc44fdcdc52044dcab3f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 17488,
+      "sha256": "e69bcea16fc2b035082fd12ea91d42f177347113dfbbf3a87ebd1224242cc780",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 14352,
+      "sha256": "d536e4ba53f1c6184453885dfb9042f2289de68f7b6cf8f0102f4614f06eb0d1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/test_ice_hockey_gemma3_1B_sft_sub_gemini2.5-pro.jsonl",
+      "bytes": 29491,
+      "sha256": "737a1295e8d4848d2903786b2bc27e9db318f75eeb1704ba9016ac46f012ebd1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_sft_lora/test_ice_hockey_gemma3_1B_sft_sub_gpt-5.1.jsonl",
+      "bytes": 18633,
+      "sha256": "77ee510cb372e9c183ca8a6bfee32c6e84be1df5ebb8ecbda26ff554f8baca51",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 33482,
+      "sha256": "e6ca6dcc4828e2fd0e1e879c382c7c581904e94968720232921d615bcd8990f0",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 33134,
+      "sha256": "5747d3b83cb5ce7ed9c98f1de0c21cce782c374c46f5c2aecf771665b14c4e43",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 26798,
+      "sha256": "892fd11ff4b689093c50c5152b6420e840616133852cd8dccb7a5e288483ca90",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 29324,
+      "sha256": "95ed4225e634deef09a5bfbac0978e3c6d774444d8647abf859d69e7b770f10b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 29458,
+      "sha256": "a7c71b4a88d8139519742381d63707cade9b304b350241924db1d60215b4a144",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 31879,
+      "sha256": "1c45d899109a8b3d80eb024f6046cdd4fe4e0a1f2a081db2728964b68b912c66",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 27460,
+      "sha256": "532d27f8d658479fad70ee7b2e503d1ffec66371131b2e05325f6e0e6632d281",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 27704,
+      "sha256": "518f46aee40b0175c53d03e75005953212a287da6b6f57dbb4299bb0320a9512",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_1.7B_cc_gemini2.5-pro.jsonl",
+      "bytes": 65689,
+      "sha256": "76c1ca55a729acb9393f0f3cc216e9d1c6bd5084533384c4a2a968e16070e19b",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_1.7B_cc_gpt5.1.jsonl",
+      "bytes": 68621,
+      "sha256": "1b5d701051287cb11c9b14f8a0f371c05da2adba3493ae8f50f1f5588d173c50",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_1.7B_gemini-2.5-pro.jsonl",
+      "bytes": 66011,
+      "sha256": "335d9224bf04220315fd8ca8d801fa00d04234042a56fb16f6072c8ea1e4014b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_1.7B_gpt-5.1.jsonl",
+      "bytes": 50753,
+      "sha256": "c31d34752c716132214d2dccaaa2285e4c3f8e6c8a5a0f13447cabe0c0e5f6d1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_32B_cc_gemini2.5-pro.jsonl",
+      "bytes": 58809,
+      "sha256": "29789af7b010f79925b1e0f8043d4eaad79d24882f94e39f28707f6ea1c1fda7",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_32B_cc_gpt5.1.jsonl",
+      "bytes": 67616,
+      "sha256": "4afe5385b7fbadb1dd0e923a00ce28c24900da7e21b5bdbc06a2530f1af82cf9",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_32B_gemini-2.5-pro.jsonl",
+      "bytes": 17289,
+      "sha256": "77b3850192f297aa7ef164289ce306c3238e0654819d1aa879cae8edf8e09d45",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_32B_gpt-5.1.jsonl",
+      "bytes": 13871,
+      "sha256": "4fcf1eccc795ea300b37e22aded66642bafc67046ef3f39c4af97c0768ccae61",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_8B_gemini-2.5-pro.jsonl",
+      "bytes": 25191,
+      "sha256": "3361894a32ad0a9b5c400d28a5cb2f0ad2ee064509e607430127e219fb6701cb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_8B_gpt-5.1.jsonl",
+      "bytes": 17192,
+      "sha256": "ee23db4148ef3839006ed7f1c71fe393f5df0c9bbc0a5606dbfa3b1baa6c32f4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/test_ice_hockey_gemma3_1B_sft_webnlg_json_gemini2.5-pro.jsonl",
+      "bytes": 106837,
+      "sha256": "de78210bb438e4680a23daada836e83ab500239ea5c1b43eda912b0571b189ec",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/test_ice_hockey_gemma3_1B_sft_webnlg_json_gpt-5.1.jsonl",
+      "bytes": 99244,
+      "sha256": "e597680f8e7e0f6089c456464c7cd13b40341cca6deb1c1a3904a8140eb9b0ef",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/test_ice_hockey_gemma3_27B_sft_webnlg_json_gemini2.5-pro.jsonl",
+      "bytes": 25413,
+      "sha256": "039b63a08299cffb8e22f78bf373b6a41275fa76f740f1301277b8d4bca26854",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/sft_lora/test_ice_hockey_gemma3_27B_sft_webnlg_json_gpt-5.1.jsonl",
+      "bytes": 16253,
+      "sha256": "bf8531d2efeae1bbf90009ff51e1ce33b20267e5ad8449c5817958a48f4af1ac",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_gpt4.1_gpt-5.1.jsonl",
+      "bytes": 18542,
+      "sha256": "f158647c2f615ca53e74aa2afaf98becceaf8e224fe85874ce85815e02fdd63f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_1.7B_cc_gemini2.5-pro.jsonl",
+      "bytes": 65479,
+      "sha256": "a910f24613af42541cfd03e5069d8ab8faea9655fcc2ad3b05be71b9d23c7e7c",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_1.7B_cc_gpt5.1.jsonl",
+      "bytes": 67056,
+      "sha256": "e41ccc7d43ddd09b80f70e498d7a9565ade556e2f0a1e71d34f67e88a147227c",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_1.7B_gemini-2.5-pro.jsonl",
+      "bytes": 50225,
+      "sha256": "e453553906db49cc588fa92b59a749b7e1a275a9ccfd0a14743df2d5a9bde592",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_1.7B_gpt-5.1.jsonl",
+      "bytes": 42734,
+      "sha256": "c2f6f0b71a489547777fe458bf60f3211477fa27dd1c447b4b66835a118dc9bc",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_32B_gemini-2.5-pro.jsonl",
+      "bytes": 24948,
+      "sha256": "196f8b84fd51a42b3c8e8f4566fe9c7f8c3f4dde22ed86346ceb48e71d12c3fb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_32B_gpt-5.1.jsonl",
+      "bytes": 26996,
+      "sha256": "3cb49a298c7897eef9c55f81ddab61b590b27a407628a817cdde075bca71519c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_8B_gemini-2.5-pro.jsonl",
+      "bytes": 28323,
+      "sha256": "513c3964a95e8356a17da10e797c051f33a888433bb99b2b824b89b55333c1c1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/ice_hockey_zero_shot_qwen3_8B_gpt-5.1.jsonl",
+      "bytes": 26957,
+      "sha256": "ec5ce645308664c56c26b54e655c1844e2d6b01e6d803921bf92aac8e2ea3ac6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/test_ice_hockey_gemma3_1b_gemini2.5-pro.jsonl",
+      "bytes": 59982,
+      "sha256": "593259b127a29170f7d56415d133c23976483e74a8c53963cbee2a63fba1a752",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/test_ice_hockey_gemma3_1b_gpt-5.1.jsonl",
+      "bytes": 51852,
+      "sha256": "11bdca848cae9a17756940e3bb824f856884f1cf682860c0238a8bbb79a912c5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/test_ice_hockey_gemma3_27b_gemini2.5-pro.jsonl",
+      "bytes": 24830,
+      "sha256": "0cb5422cc410441298693feb7a0dbc309b69244c53115155376855016766c1b4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/eval_res/zero_shot/test_ice_hockey_gemma3_27b_gpt-5.1.jsonl",
+      "bytes": 17970,
+      "sha256": "7a5205ad2c7465b84341e685244807514b98b9bd97776a8d59383a5e690973bd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 21571,
+      "sha256": "21fefb3a555fa53a60fb0027e5495b7cda8c65ae1fc4203fdf523fccabeeed53",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 22978,
+      "sha256": "150aa3f43ae70a63f932fb2b69e84930629622c7d71285ac4d674bdb47b51f5b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 25460,
+      "sha256": "c5c3526f711d5bede422372cbb3660a73aa7d5fe1c03c79c70c7673ca0e42be9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_sft_lora/ice_hockey_ddkd_sft_lora_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 24244,
+      "sha256": "8348812b00b50eb7da490774ff197895791c3f75d0d1c2c21e1f540b66340ee2",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_sft_lora/ice_hockey_test_gemma3_1B_sft_sub_responses.jsonl",
+      "bytes": 37184,
+      "sha256": "7a5abb1f55301ac114b429b8ada5a7f2c882bb92e979bcbd3fd9f4c609074b98",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 43176,
+      "sha256": "c04d982809615d34043645c46f99640e533e9759f737d3a3255d9ec982e3b580",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 41690,
+      "sha256": "003497b25b8b964651ce130b24df6f1e5f67a167a60958613ddf667d6aa1c5a4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 42569,
+      "sha256": "5dbac9f29d4902ae1b9b01e7e47433f14f6f018f6125760a62e7f3b538863a6d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/ddkd_zero_shot/ice_hockey_ddkd_zero_shot_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 41706,
+      "sha256": "257632c90c45cb7643360eadda80a5d202e4a5521bdf4f3943d3cd704f2d2b6b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_1.7B_responses.jsonl",
+      "bytes": 60542,
+      "sha256": "a76620fde0c17c83141a0425e014f0e0b0790aa783bd2216cd924db0bc292b34",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_32B_responses.jsonl",
+      "bytes": 23716,
+      "sha256": "34c424301ba3dca81a8b096a783819385e071e127a72314210bb8193344ec3d8",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/sft_lora/ice_hockey_sft_lora_on_webnlg_json_qwen3_8B_responses.jsonl",
+      "bytes": 48972,
+      "sha256": "f58eae228afe0026ea3f93d7091aea23c90bfcb5d8cd2640e485f3d335b195cf",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/sft_lora/ice_hockey_test_gemma3_1B_sft_webnlg_json_responses.jsonl",
+      "bytes": 1063930,
+      "sha256": "d02d131265b05f58a5cf8c0c417f799b35f5afacf2aaaae2a222506122c2691e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/sft_lora/ice_hockey_test_gemma3_27B_sft_webnlg_json_responses.jsonl",
+      "bytes": 36171,
+      "sha256": "8d6968bb92e1aa7a6131bddcc7cd61b19ec61441f14d00f6bedc2891f4028e29",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/zero_shot/ice_hockey_test_chat_format_gpt4.1_responses.jsonl",
+      "bytes": 44987,
+      "sha256": "e7dcc06623be58cd69553449d3649fcafeb83d8735db5665055f64ec0d944182",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/zero_shot/ice_hockey_test_gemma3_1b_responses.jsonl",
+      "bytes": 30140,
+      "sha256": "a1b3c9fd878c1c78735b21df7016baee4ad1aa5e83305804adcae8da58617496",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/zero_shot/ice_hockey_zero_shot_qwen3_1.7B_responses.jsonl",
+      "bytes": 36573,
+      "sha256": "b503b9b30a8a2f26b5388eed4e9f6dc38c749d5a19d377fb26f4f8316fe67f59",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/zero_shot/ice_hockey_zero_shot_qwen3_32B_responses.jsonl",
+      "bytes": 42440,
+      "sha256": "5a7f5ca0d992a24967db1ecd846be310db2c1b8336e9c6c78fdee62115558ebd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/zero_shot/ice_hockey_zero_shot_qwen3_8B_responses.jsonl",
+      "bytes": 40581,
+      "sha256": "69954465d61bd6ba17e035ec4f235cab4a60eb5fbf527f528c90228f0fbb045b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/ice_hockey/outputs/zero_shot/test_gemma3_27b_responses.jsonl",
+      "bytes": 44041,
+      "sha256": "35549b8cea78419aed72c1c1233b2cf398aee26ff25930d8a15d1e67593c976d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 57646,
+      "sha256": "998999e15fc300d2200882ff2465c700c446f30e77a3595c0bee2d63fd6a1f42",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 68617,
+      "sha256": "40449c58de7f919a51bdf39abcf0737349df4df812584bcde7b9a95dde80a300",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_mixed_cc_gemini2.5-pro.jsonl",
+      "bytes": 68371,
+      "sha256": "3b71f16ce15da66eacef9c906ae60a2c4dc6d5ad8f29d45abd2e67cab6b5d924",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_mixed_cc_gpt5.1.jsonl",
+      "bytes": 75080,
+      "sha256": "340122fe6cf40e0e26552f83e7704dcf35f77485034a2a0a4b7bad10c900cb63",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 32267,
+      "sha256": "7ab2838d1aee4825631ee0ff186900914a4d67d67ac8520d78ca3a2fca5cd17f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 17963,
+      "sha256": "1fe2872e33c0ce95d196dd22a968e64e5c48edfaef00af2e58c96c72c689ff95",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 29995,
+      "sha256": "5d0af7b3be593d18adc69368346da34558e4d1aa5fd4f2b63a9214eea1d6194b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 19447,
+      "sha256": "f3194c2b970d28d480c16216bd19751625a9a6e1f4bb2ca5e0ae57f85fd965cb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 46879,
+      "sha256": "41ec4cb14dd6c974bf6ec6f06cdd8a9976907e027ee42aaf1fa5bf747edb2db7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 35260,
+      "sha256": "3b05acc0f39db328edfdde4cdab4bceb291149e906370510153761d306b8e3f7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/test_owid_gemma3_1b_it_sft_mixed_gemini2.5-pro.jsonl",
+      "bytes": 33373,
+      "sha256": "6f33274677f5fda219d549d6e7fd4ff64f819854af125474592079f888b3ef77",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_sft_lora/test_owid_gemma3_1b_it_sft_mixed_gpt-5.1.jsonl",
+      "bytes": 22677,
+      "sha256": "1a105e9c3cc7bc27aa473ddd11ed544df3fc3df6d2b805eebce07d35a10f7e52",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 52637,
+      "sha256": "0abd2c7e56eb85e8d5d8578a864b16bb9c0b0c9ea117c2c2466892865fa29e2a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 47255,
+      "sha256": "eae46d560765a724789be0d761ef21a276507f817c254610f2e52e0f9e12b98a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 49428,
+      "sha256": "51ea6aa0f894f891e606f5de4692291a997694b628fabb9a0a8ea586b355f013",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 40138,
+      "sha256": "52bb0b2d17a9b098f58ee8477713dd2a29aec7f48ebad1a2209f4a1a5d319235",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 51526,
+      "sha256": "39ffa170dfe7fb38241035a1def981b7b3930f230b2367565a42cb321080be79",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 40673,
+      "sha256": "01e1866cb8bb6b59989bd90150cf6dbe6048474ea4dd27910361fec95c9b35e4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 48864,
+      "sha256": "581506e9dc690ec54e230d980a8a43bb9b25f59e9b14ccb430f533deda1b09e6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 38083,
+      "sha256": "062ba79ed69bc23a46c066d8f6ef4a919e6adcba5c2892322aefa54decb4f112",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_1.7b_cc_gemini2.5-pro.jsonl",
+      "bytes": 74249,
+      "sha256": "8cdd8d08f3fbeafd7fbb9509b4e12ed8559516a818d1650babb351a076bd4e09",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_1.7b_cc_gpt5.1.jsonl",
+      "bytes": 74811,
+      "sha256": "db7ef24492ee173e4d896931e953da33e4bf8a4a91fd3313b6452e4d8f481fc1",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_1.7b_gemini-2.5-pro.jsonl",
+      "bytes": 54830,
+      "sha256": "054b8cf39567ccf75e68c75a444b2157d48b626c4e45fcce7aa88a50e4dd8b5d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_1.7b_gpt-5.1.jsonl",
+      "bytes": 55497,
+      "sha256": "d3f0506d3f0e13d77a2d31d38a4e700c8523da51b16530d8ae4f18a9e9eb0fb5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_32b_cc_gemini2.5-pro.jsonl",
+      "bytes": 68087,
+      "sha256": "b6767ac1fa51a6034307214a424ac2e605fc7a36587e7b278972d34697cce81d",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_32b_cc_gpt5.1.jsonl",
+      "bytes": 71810,
+      "sha256": "3dcf29a9d9794f590ff24cf395ae1c0c10e60e711c07034e0433e9ac6eaa9e22",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_32b_gemini-2.5-pro.jsonl",
+      "bytes": 32840,
+      "sha256": "2ee3e8103b2366cf40ade750cdb533644e260cd6765f5d19b16de9736566ca21",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_32b_gpt-5.1.jsonl",
+      "bytes": 20689,
+      "sha256": "6c3fc3a3f8e272790e119f5fcb6cf76d845377a1e4c3018107397f1dd97a67ef",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_8b_gemini-2.5-pro.jsonl",
+      "bytes": 38319,
+      "sha256": "a225645911551404f6787c6e9d30e831d5a6c914ea2fbbd5160ca01d50159647",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_8b_gpt-5.1.jsonl",
+      "bytes": 24974,
+      "sha256": "a509611b7e875aad62555a35e6a1ffe88c2e8a9b441a96b4c03d520c802bb83f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/test_owid_gemma3_1B_sft_webnlg_csv_gemini2.5-pro.jsonl",
+      "bytes": 65513,
+      "sha256": "a055556a8474b395abe1fceeb51ed37d99c15bfd4df3a2a906181393b4f3e872",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/test_owid_gemma3_1B_sft_webnlg_csv_gpt-5.1.jsonl",
+      "bytes": 69757,
+      "sha256": "f5538ef3c5e8e5e23ce2637cc3272d98059ee8d3f6a25706dba7cdbbff805afd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/test_owid_gemma3_27B_sft_webnlg_csv_gemini2.5-pro.jsonl",
+      "bytes": 36263,
+      "sha256": "c84d8705968487c10dd03ca7dcb485630b353f0d3e986dd9f5d8296d1a655cf1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/sft_lora/test_owid_gemma3_27B_sft_webnlg_csv_gpt-5.1.jsonl",
+      "bytes": 24168,
+      "sha256": "65b063662f5adf7585b9dc17aaf1bdfc10bbd3bcdd83f3839eec22d3b34b06ac",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_gpt4.1_gpt-5.1.jsonl",
+      "bytes": 23452,
+      "sha256": "c12427c95a26136222e455d2f00ba1707adff52ced1dc8c7a43f786106d7ccc1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_1.7b_cc_gemini2.5-pro.jsonl",
+      "bytes": 73589,
+      "sha256": "c3ba832ebb6ed52c6791b0e4d55726022382be50b42bb7657bcd62f83c6799ed",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_1.7b_cc_gpt5.1.jsonl",
+      "bytes": 76701,
+      "sha256": "5cde087fd4c944ad25a4d829029037fd4e70a658e2fd89ac9c92deb3a0f43d28",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_1.7b_gemini-2.5-pro.jsonl",
+      "bytes": 56861,
+      "sha256": "0dcfaca69b30325b1154d7788bbc2192d9ad0b1793b7a24adc0b03dffd7860fd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_1.7b_gpt-5.1.jsonl",
+      "bytes": 49618,
+      "sha256": "bcc090b7fe7e24d421e23db3b18cca42cdf3f6adec4b292cdff4b2239d5fec71",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_32b_gemini-2.5-pro.jsonl",
+      "bytes": 40565,
+      "sha256": "29980ec550ded1da5e1d52b2ee140c7f0e307441153c70bd89bb1195a8b0a52f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_32b_gpt-5.1.jsonl",
+      "bytes": 32290,
+      "sha256": "fe48e06165afa40dff12e47ded5c159fb7d2ac6996a1a36e701951f965fe52b5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_8b_gemini-2.5-pro.jsonl",
+      "bytes": 43202,
+      "sha256": "9ab91045bbb38d969d641611c86500062f4baae0d357035745ded828e9d8d352",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/owid_zero_shot_qwen3_8b_gpt-5.1.jsonl",
+      "bytes": 35463,
+      "sha256": "93194eaf5dc77c5788dd4d7e5e0606381a1e77cf491d589a95b1ef0a8bbf9c0b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/test_owid_gemma3_1b_gemini2.5-pro.jsonl",
+      "bytes": 75792,
+      "sha256": "6e299e29c7f1311ed26cc76155b394d1a7827cf6392c6e3ae396dfe5d287a13f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/test_owid_gemma3_1b_gpt-5.1.jsonl",
+      "bytes": 71005,
+      "sha256": "e37d8b1a17d68a37e930bb8debed8309d959c56a7bb3fa5c5def9c4cc62d50f3",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/test_owid_gemma3_27b_gemini2.5-pro.jsonl",
+      "bytes": 42488,
+      "sha256": "81180655d21d02631aeb4275bb0df145512da5afd755446a971e6ab448d730e8",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/eval_res/zero_shot/test_owid_gemma3_27b_gpt-5.1.jsonl",
+      "bytes": 30173,
+      "sha256": "e403994a6a21ff2a0859b18d9d847cfe6d5e8326e09694e8029f07b62783a61f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 124350,
+      "sha256": "c73ca868109eae73bc19f45f82113392e6dffa40cf5ae3e51bc3e18712cb9fb6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 94478,
+      "sha256": "994bd8f17f21e11b56e625aa1bbba92058efbe4238bfabeccbcfb21367d42e40",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 35489,
+      "sha256": "57d9345443cdb097b5684e30323bc0a28c27b0c75a56fc89265235628e62899e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_sft_lora/owid_ddkd_sft_lora_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 104118,
+      "sha256": "4402a383c75532a8121fc2d160e7d9e0541dc72f3fef93720b174e1f43d89c13",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_sft_lora/test_gemma3_1b_it_sft_mixed_responses.jsonl",
+      "bytes": 123573,
+      "sha256": "367943a10ea29cddaeb50ef6828c7a8b6209abadac45aa1e4029af2fdf862c10",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 45635,
+      "sha256": "7dbe1b5d86cc8053ce00abcc27b12a953ab000038c1ff537597459e98926ac10",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 43782,
+      "sha256": "3e1349ee1f45d699fdf11553851c78bfa6ebd713c38d9188ed0b1f87cb95a73b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 46957,
+      "sha256": "27acb28ab57ac163ac4b37cecfaf3aa7ed3f08af1109427f43f02c221f01b7da",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/ddkd_zero_shot/owid_ddkd_zero_shot_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 43585,
+      "sha256": "6c60d393b2341061778e3a66c9cf357fa3c2d1d30acf07a1466819056b5c57b1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_1.7b_responses.jsonl",
+      "bytes": 114599,
+      "sha256": "8964e9e0bfd226b1602714bf4440d75aef6bc36504ccabf344d190b02ec36c58",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_32b_responses.jsonl",
+      "bytes": 125597,
+      "sha256": "19f8a78c623ebd8ab98f63b2b9e8c4a79b5340e3efbf3089dc52b6cdc5dabf5e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/sft_lora/owid_sft_lora_on_webnlg_csv_qwen3_8b_responses.jsonl",
+      "bytes": 77463,
+      "sha256": "ea287973fce388f92ba95318b41c7b5a915f64becfe5d850918b3f0a0da10dd7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/sft_lora/owid_test_gemma3_27B_sft_webnlg_csv_responses.jsonl",
+      "bytes": 165526,
+      "sha256": "10f365cf1c8d2abf39a6288758642bfccdd0a3050fc9e345675796730c6eed80",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/zero_shot/owid_test_chat_format_gpt4.1_responses.jsonl",
+      "bytes": 56773,
+      "sha256": "964f7b41416b067a3d1c33571386e343caad9c51c7bef814a66cfd84a342fc52",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/zero_shot/owid_test_gemma3_1b_responses.jsonl",
+      "bytes": 30700,
+      "sha256": "c7b3d3a37efa8435e8cdb1068a47bba0b341b029f23c7b01ca0cb3b6a690d61f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/zero_shot/owid_test_gemma3_27b_responses.jsonl",
+      "bytes": 50971,
+      "sha256": "15ca4dc4405b066d969487d2d204ff199bf972984b663eb960728167f02c3c7d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/zero_shot/owid_zero_shot_qwen3_1.7b_responses.jsonl",
+      "bytes": 33234,
+      "sha256": "05e8b0de9c1dfc9cf98714eb8653b3951518b5ba06f8f31ba0ceac46416adf1e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/zero_shot/owid_zero_shot_qwen3_32b_responses.jsonl",
+      "bytes": 43078,
+      "sha256": "13f9c9dca6b48467ddf382327dd0d1dd478745b9a02856a5012c735d4cfbd23e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/owid/outputs/zero_shot/owid_zero_shot_qwen3_8b_responses.jsonl",
+      "bytes": 32446,
+      "sha256": "19bca212463cc10fa95c523307c87a39f3a6409d4b9c63f17049354c09defb1f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/test_weather_gemma3_1B_sft_sub_gemini2.5-pro.jsonl",
+      "bytes": 122940,
+      "sha256": "6f363f1984fa73baea1c4bbbf9cd4302ffa4f89051514aeda77a3cdfa58e4290",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/test_weather_gemma3_1B_sft_sub_gpt-5.1.jsonl",
+      "bytes": 78360,
+      "sha256": "0e2fb6700eae2461914f56cc56848d1efafa802306502d002d18b1d7a3ebf3d7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 149904,
+      "sha256": "844dcf1eebbec2569fc761e1e22ef3a2f6f95208986b744ad95033a82b963fc9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 122116,
+      "sha256": "8e0e439e35af3e61e136383c81689bae089c2a55949d56235ec5d6aedc41d607",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 87836,
+      "sha256": "44ec31e3dcdea4533ce1a520d81feda4da2401cd4b4da3d5bd3d014216777533",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 83239,
+      "sha256": "c4278d2f9c491d202ecfab11d97d7a34f18826b347a7ca520771bfdadcef419d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 97356,
+      "sha256": "f183e5a171fa225f280d71924ac5bded27bd8849bdbca74aa938f64efd02c200",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 94967,
+      "sha256": "f2e021762fb15f3278ee2ab5ab214426804244e4d117e0aad4376d5ba6503325",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_sub_cc_gemini2.5-pro.jsonl",
+      "bytes": 82894,
+      "sha256": "4469b932ab3e7c7e995a4c8af52c57ad0ef7a7e4c9848e466b01c209118decc5",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_sub_cc_gpt5.1.jsonl",
+      "bytes": 79910,
+      "sha256": "500c2ab2d25ecddf732a9bed7834e478617bc10e9ad42eaecb075135fccbbdf3",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 87214,
+      "sha256": "c139f4081ac0df6375f70d1856e4f5a1b09d15801510711dbc6a39447ebfebb1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 48324,
+      "sha256": "444f8c14d4ca592ba6a02ed6d411be56c492ddd2f5611ba44646a2cd60a0412d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_base_gemini-2.5-pro.jsonl",
+      "bytes": 99155,
+      "sha256": "c9977b93199aa49ca862218b2779b7be0e27289307a496185f7bab460ff2de41",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_base_gpt-5.1.jsonl",
+      "bytes": 83377,
+      "sha256": "7569a9fb0a9a45a6de8431769e75819e32a6b8c4acbe1945c48f6dbcf8609dc5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 88330,
+      "sha256": "3b7212aa1e12310a40d7275e42c05e30664e87ad695adc6bd42b1d92edb4ba19",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_mixed_gpt-5.1.jsonl",
+      "bytes": 66019,
+      "sha256": "cc85a76c448376a8bf18c0bf3aa188184d74215b5a1caa0bcefe31a8c2487dd8",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_pert_gemini-2.5-pro.jsonl",
+      "bytes": 83960,
+      "sha256": "9ceec756bf374a86909ad4ee0f9fc4e5a440a9e92a79114036e5fee1378a22da",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_pert_gpt-5.1.jsonl",
+      "bytes": 61573,
+      "sha256": "6b7346821af5e89df736b7d300bcfe42991cc7f4f7f3919eb0dd5983c7af1869",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_sub_gemini-2.5-pro.jsonl",
+      "bytes": 85278,
+      "sha256": "5ae02774549beee8ddb22c95e15fad0b50c63371911c1e26f9f60f4402e20732",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_sub_gpt-5.1.jsonl",
+      "bytes": 61197,
+      "sha256": "9243c958bd91028b80cc1067c0c15b0f555d5f1b7ef629e61121ac89acac3aaf",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/test_weather_gemma3_1B_sft_webnlg_json_gemini2.5-pro.jsonl",
+      "bytes": 129645,
+      "sha256": "3f5dd30d289c6c20b4dcc7540e7c62e24e929ef095092f9433892d1e5cdf0fc5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/test_weather_gemma3_1B_sft_webnlg_json_gpt-5.1.jsonl",
+      "bytes": 110114,
+      "sha256": "77e4d9b15793a94670dc295a93ea8e8b099ade694c35fca7532eda63af642a10",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/test_weather_gemma3_27B_sft_webnlg_json_gemini2.5-pro.jsonl",
+      "bytes": 99488,
+      "sha256": "506f0133376568fa2e636ca0e92bf3458d26f8e6a79d8aaacfb02e75746c286a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/test_weather_gemma3_27B_sft_webnlg_json_gpt-5.1.jsonl",
+      "bytes": 52447,
+      "sha256": "d4f2e31b212e39a6af0227d1b597f94b5fc3c0040b43e1351b65518d1575f2ea",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_1.7B_cc_gemini2.5-pro.jsonl",
+      "bytes": 83968,
+      "sha256": "b70e71b98895852d6d02fa31d4b3b6b0bdbc63efcb85df852e69e3cac805ebce",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_1.7B_cc_gpt5.1.jsonl",
+      "bytes": 79708,
+      "sha256": "3709f36c44ac5a35d6cfaf02e606def944d726643d54316ac072c62017861bd5",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_1.7B_gemini-2.5-pro.jsonl",
+      "bytes": 176757,
+      "sha256": "a41156c7a4aab9bb0ab6daad34d9626b6c040c5aec26d5f9f3fdee95fdb25b3e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_1.7B_gpt-5.1.jsonl",
+      "bytes": 242660,
+      "sha256": "e3812d0c5e2fa803874459fa36984fadddccfb78df37f46d8f009a88428647ca",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_32B_cc_gemini2.5-pro.jsonl",
+      "bytes": 81742,
+      "sha256": "5340b9dfd34c2befb3928472a60a1d91187468123f7bd0e7bb553f7a8f9d087b",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_32B_cc_gpt5.1.jsonl",
+      "bytes": 80437,
+      "sha256": "6a05f6d010a2b28972a16a1fdfad4f3faea8ccf87cc2a930b37365fc8250de88",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_32B_gemini-2.5-pro.jsonl",
+      "bytes": 66061,
+      "sha256": "9853a08d60b3cdbc04da243eeb4f6da5baa0dae335fe26e8ea3e91bce9273cc9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_32B_gpt-5.1.jsonl",
+      "bytes": 43592,
+      "sha256": "33faa018a54d565dbb6f4b43259693944325f12422e0d0b7e856e6eca43bb532",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_8B_gemini-2.5-pro.jsonl",
+      "bytes": 92292,
+      "sha256": "8cd5cb329ec9c6e800042185410a0c37080a3cf3c8c62c840f4bc398c82930ad",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_8B_gpt-5.1.jsonl",
+      "bytes": 90867,
+      "sha256": "ed8e80d7ec5059b9e304a739c162488b91c4ee57004bf3586c234095aba6c7fb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/test_weather_gemma3_1b_gemini2.5-pro.jsonl",
+      "bytes": 101183,
+      "sha256": "1bc50721b628af0d31e8123e8a71dd80b2dc77331399f390248f14499fe797a7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/test_weather_gemma3_1b_gpt-5.1.jsonl",
+      "bytes": 93085,
+      "sha256": "d8d2ab4cfbf3ad4b9256cafbfb54b3c1dd6f513c7b0116f176cc7cefd48eebd5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/test_weather_gemma3_27b_gemini2.5-pro.jsonl",
+      "bytes": 109243,
+      "sha256": "2f4a8fa9e437119166ec03a50e6015b5abab8b5bb1062f00f5d91d324abd0021",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/test_weather_gemma3_27b_gpt-5.1.jsonl",
+      "bytes": 91211,
+      "sha256": "48b7ace384053039ad83208aab80444dc0c09c142ac4510a73189e8b540fb9b9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_gpt4.1_gpt-5.1.jsonl",
+      "bytes": 27725,
+      "sha256": "db5b9b95f6f989d8c5fb0fb819f78f6654b2242d39697111cad5cc71a7220e43",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_1.7B_cc_gemini2.5-pro.jsonl",
+      "bytes": 84110,
+      "sha256": "05755ed82f83a5091f1038390ad891731cef58dfee32ca228689373d79073995",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_1.7B_cc_gpt5.1.jsonl",
+      "bytes": 81535,
+      "sha256": "44d8d171356411fd06af3ea73ce3b9bbe1f7a6af11df2e91539ac96b1c2a368c",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_1.7B_gemini-2.5-pro.jsonl",
+      "bytes": 141298,
+      "sha256": "7e3215c63c1c8396b008fd8d55ce951e685682193d89d328f515a22fd93b77bd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_1.7B_gpt-5.1.jsonl",
+      "bytes": 148333,
+      "sha256": "3c12113043ab5c1d0e3547bd70a1c731bdf840fc0dec31bde2e594882120a5a6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_32B_gemini-2.5-pro.jsonl",
+      "bytes": 82687,
+      "sha256": "a3833942166a3ac23eee4a6e3408c864d49726d24129d91ded40371ebeb14069",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_32B_gpt-5.1.jsonl",
+      "bytes": 70218,
+      "sha256": "b87df5b063bc3f43ebf8264a674a08ecc2c43875dd57887328eda4a58c4ac2e4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_8B_gemini-2.5-pro.jsonl",
+      "bytes": 89643,
+      "sha256": "88a7ec5193b7b72a5beb8b7a055706e23b53974edc532afa32662a51b1ac0731",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/eval_res/zero_shot/weather_zero_shot_qwen3_8B_gpt-5.1.jsonl",
+      "bytes": 89911,
+      "sha256": "dbbaa87b13e6f79dcf46643ea1cdfc80ad619c1cf3d57156c8649f024beff970",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_sft_lora/test_weather_gemma3_1B_sft_sub_responses.jsonl",
+      "bytes": 193566,
+      "sha256": "681f7af98557bb788946579c29c8e7f0332d2a60037326f7f215a6d09fa6c766",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 124723,
+      "sha256": "bf8cd1ef7104b00b409c478fa11869b16abcbc4955e724e2ea85c74d126d4c5b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 50936,
+      "sha256": "f11c92006397a6c78c2e5729f1f01cc48c891e1374b9fda549fa0c72a8d97f8e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 118298,
+      "sha256": "d937c424acb557722a10a03506bc8f2be190f3779c0535cb71f456a3654daf5d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_sft_lora/weather_ddkd_sft_lora_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 95100,
+      "sha256": "22041591824b66cbdddbfa9dfa2aa87fa4a9f24ddee27da3dd05119161b2f4d6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_base_responses.jsonl",
+      "bytes": 72961,
+      "sha256": "f459a4a1815325f2914448d020212f0287f268e1b11ab2e1e86dacb4506b92b1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_mixed_responses.jsonl",
+      "bytes": 77778,
+      "sha256": "b2c72754936b907213517bc7fac9803fe72b3248c2f22f5a0429def933d5bd82",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_pert_responses.jsonl",
+      "bytes": 76817,
+      "sha256": "8c3a7b098b5ff03686df469429d1f0961d5a7cda0c5d5c2a153f53684dd925f7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/ddkd_zero_shot/weather_ddkd_zero_shot_qwen3_1.7b_sub_responses.jsonl",
+      "bytes": 79697,
+      "sha256": "3ac419a71e86de6dc25a2b6aab192679a025bf065485597565d530168e630ff9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_1.7B_responses.jsonl",
+      "bytes": 423454,
+      "sha256": "d01945d773ede57d661c231fecad9bbe31ccfd76a11bb204c146947b76f62869",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_32B_responses.jsonl",
+      "bytes": 115866,
+      "sha256": "f0c6c1dce68ca3bebcf1963aafcb10c087944b26cf534ff1d152532f6d43d49f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/sft_lora/weather_sft_lora_on_webnlg_json_qwen3_8B_responses.jsonl",
+      "bytes": 174156,
+      "sha256": "06cbd857c6afa0e4ee7446378ba8313f775c38deb1a699bae76d2fd1939dcce4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/sft_lora/weather_test_gemma3_1B_sft_webnlg_json_responses.jsonl",
+      "bytes": 757534,
+      "sha256": "3023053c60fbe0c331052ae200ebd954833d5f8f924fd6d8ede68750002a3e23",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/sft_lora/weather_test_gemma3_27B_sft_webnlg_json_responses.jsonl",
+      "bytes": 280098,
+      "sha256": "355083f55e552a80db9f8ba2e7746bc118cc3b35a545ad5d139c7bd645e55e4e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/zero_shot/test_gemma3_27b_responses.jsonl",
+      "bytes": 65339,
+      "sha256": "7a2c62e38d635f04e18f5edeaf3e3ce6ebd96704486b4df126a18160331c41ab",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/zero_shot/weather_test_chat_format_gpt4.1_responses.jsonl",
+      "bytes": 79378,
+      "sha256": "3ef7ec6ad5a42bfd5dbdf52466d65a4924c22ba8c58eb0b7fd8e57ac10701947",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/zero_shot/weather_test_gemma3_1b_responses.jsonl",
+      "bytes": 38803,
+      "sha256": "8fac5938af9bc3ca7fe50a0e6a841bffe1f23f21e4f9cfc314627f22498c0a37",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/zero_shot/weather_zero_shot_qwen3_1.7B_responses.jsonl",
+      "bytes": 78953,
+      "sha256": "002bd4f690a3a0b9e20721fbf3cfc742b4e5f8e943a243d8e86bb4b3684091be",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/zero_shot/weather_zero_shot_qwen3_32B_responses.jsonl",
+      "bytes": 78189,
+      "sha256": "04a7a8c1ba24a72fe60c5cd8b5caca6bc110349e753a3f42a9f4fa9a5ff89158",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/weather/outputs/zero_shot/weather_zero_shot_qwen3_8B_responses.jsonl",
+      "bytes": 78576,
+      "sha256": "32ef70058e6438cf9fab648101ecd91aed4593c6108d346058f837499fedbb7c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/test_wikidata_gemma3_1b_mixed_gemini2.5-pro.jsonl",
+      "bytes": 23646,
+      "sha256": "4c09b776cc9b0eb717fa163c8b7287778872139d8bebc53bad9cb8a14aa5cb6d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/test_wikidata_gemma3_1b_mixed_gpt-5.1.jsonl",
+      "bytes": 17864,
+      "sha256": "a9bd0dc873ae3b087a96367119bdb93119e19a082990d7e7969a2fa55b9aae3c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_base_gemini-2.5-pro.jsonl",
+      "bytes": 23774,
+      "sha256": "ef8196252ae6e3e111a8bf559f70467f19faeff4a1bb9b1db68731dc49820a8b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_base_gpt-5.1.jsonl",
+      "bytes": 18413,
+      "sha256": "3b58e2e06d276cdc7ea0a655385c96e01e58c7c7af3b15b71527139dcbe50f21",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_mixed_cc_gemini2.5-pro.jsonl",
+      "bytes": 36593,
+      "sha256": "8332bce3307216b6732eb43ed0448edc887d6b2f81a8f88a3126c47d592f03fb",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_mixed_cc_gpt5.1.jsonl",
+      "bytes": 35933,
+      "sha256": "cbf16a7f1c06d1c0ec40f97ffb6e5c704a780c4cde7b0ff578a5f0748c391828",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 21984,
+      "sha256": "35d3bf3a81c9c5dcabaf4ea24067a15a3fd9fdefdafaed422d18e6e8f5cf967c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_mixed_gpt-5.1.jsonl",
+      "bytes": 15189,
+      "sha256": "9dbac6d0ca2d21695eea209edc7f9428432d6186a9ca5c7154e5653f256289fa",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_pert_gemini-2.5-pro.jsonl",
+      "bytes": 21575,
+      "sha256": "88def1c0a5b118cd4751810ff3d60ff30c80742d818aa6b27eb7fb5df5d4955d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_pert_gpt-5.1.jsonl",
+      "bytes": 16984,
+      "sha256": "dd183d53929a14c92fe226b1bb22284f476ce50aa096bb8aa6bc0bcc4f9f4289",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_sub_gemini-2.5-pro.jsonl",
+      "bytes": 24385,
+      "sha256": "cd811b6ea4b36cfe6aec689c4c2567dabdfaeea4021d63d3b47fa25c5e8963f3",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_sub_gpt-5.1.jsonl",
+      "bytes": 17832,
+      "sha256": "7b3edfc9f84ad7614f2d76d0cfe0e19dacd59c38d5c71b17262368d3ed45a6b7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_32B_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 20156,
+      "sha256": "af2ac18b8f22915e801c1821bd863635b662e2aad7ffe91f9f9d96f410ff68e3",
+      "group": "human_evaluation_support",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_32B_mixed_gpt-5.1.jsonl",
+      "bytes": 15893,
+      "sha256": "4bcd2e99070bfc8964d6c170c16a476d7f6cedfbfb57fffa9769e8a1e2f8172d",
+      "group": "human_evaluation_support",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_base_gemini-2.5-pro.jsonl",
+      "bytes": 30094,
+      "sha256": "46366a39822dde122f264bc83c00eb001bbff4ec1a0e216300855f8e3f0f9a65",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_base_gpt-5.1.jsonl",
+      "bytes": 24728,
+      "sha256": "caaf48f3fa64cc9fbc0802ca223c32764fbca5f3b9f7c33586cb2e1f180a78ef",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_mixed_gemini-2.5-pro.jsonl",
+      "bytes": 26582,
+      "sha256": "b442027b0087c3a41a957405bed874e99d8855cf596426f304fb054046d269e5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_mixed_gpt-5.1.jsonl",
+      "bytes": 20486,
+      "sha256": "10a54b6655777a88313c3709e88cdabeeefe9c8060a2e2b3338c63a563737398",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_pert_gemini-2.5-pro.jsonl",
+      "bytes": 25380,
+      "sha256": "1eeec35d2e92f17b254657749f82503fa0841b0163f4907ccb15b3dea96d0d46",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_pert_gpt-5.1.jsonl",
+      "bytes": 19990,
+      "sha256": "1e1e6a0ae284c5641d374ef9c42bb023a481663fe8177ee989d0051331385ff6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_sub_gemini-2.5-pro.jsonl",
+      "bytes": 27594,
+      "sha256": "f43b08a1f9265e05572fef2573f2b54254ff9e4582fc1f4899cfcf3954f0ca46",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_sub_gpt-5.1.jsonl",
+      "bytes": 23139,
+      "sha256": "e666205956a3f699eef9ed14f1631f0cdb9b81e71c890d8b25c31b7363d7e270",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/test_wikidata_gemma3_1B_sft_webnlg_markdown_gemini2.5-pro.jsonl",
+      "bytes": 53968,
+      "sha256": "f4974bc0eae0745e80066508e71c89dcbef3eab08faf843e872c512292f40f29",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/test_wikidata_gemma3_1B_sft_webnlg_markdown_gpt-5.1.jsonl",
+      "bytes": 51476,
+      "sha256": "0879ac82551172be3674eff87078dc46a216b8eb12a7d4a617f18b3e36f98f6f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/test_wikidata_gemma3_27B_sft_webnlg_markdown_gemini2.5-pro.jsonl",
+      "bytes": 18890,
+      "sha256": "a2c6ce5f27224394767aeb7cd7bbf097bc73f10b2b3fd36afc7a8f948a4878e8",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/test_wikidata_gemma3_27B_sft_webnlg_markdown_gpt-5.1.jsonl",
+      "bytes": 15178,
+      "sha256": "e8a76be5cf4c21408dc19a2ea019c896965aff1fac6ff4c62790c4e0eefb9eab",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_1.7B_cc_gemini2.5-pro.jsonl",
+      "bytes": 37849,
+      "sha256": "3796616d2aaac2cd9fff11c9c84956deafdad5a5ffe3ab3334be2f7f3e7b267c",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_1.7B_cc_gpt5.1.jsonl",
+      "bytes": 37548,
+      "sha256": "b9ad0fcf8b2a1b6786dd2b107abecbb4c5284f6743eefab2841a0c98b2c07e71",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_1.7B_gemini-2.5-pro.jsonl",
+      "bytes": 27950,
+      "sha256": "8a09d08db945fc0d782aaf18ce95adb5cae47a03dba73dac5f0c28b1ede6c00c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_1.7B_gpt-5.1.jsonl",
+      "bytes": 20768,
+      "sha256": "0401f85ad4d44e3f99fc1bf1a2ba8fc8a268dd7f9e198b2661548f06dde19ebd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_32B_cc_gemini2.5-pro.jsonl",
+      "bytes": 36776,
+      "sha256": "c48b0148c1c43d41b6d82e8c223950d425c81155172e01920723b250a6ce55b0",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_32B_cc_gpt5.1.jsonl",
+      "bytes": 36337,
+      "sha256": "5c966542c08daebce7e2fb2fbb18bdd33019af42d38447f713e04d5192629c3d",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_32B_gemini-2.5-pro.jsonl",
+      "bytes": 21463,
+      "sha256": "5462b842dc1624fcd786ef0e371d386cc3ee0ccc889ab211ab1db417f3b0c961",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_32B_gpt-5.1.jsonl",
+      "bytes": 15022,
+      "sha256": "026a20cb3e6cb709550123d9dcca5587d2df36fe3817d1b839692bb30bec4791",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_8B_gemini-2.5-pro.jsonl",
+      "bytes": 23490,
+      "sha256": "f4c0d0e0f38badcfbf12c4ba776ebeb812e448ec911772201fcff74beee3d9c9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_8B_gpt-5.1.jsonl",
+      "bytes": 16691,
+      "sha256": "3e6de446a903917cfc4a06369e22a7aed9d0aa7441f90c7194aa5065af61199d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/test_wikidata_gemma3_1b_gemini2.5-pro.jsonl",
+      "bytes": 47867,
+      "sha256": "dafb848a4ebfda334c8e1b086b60637f4fc6663b6ced94f9902b315a331e2432",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/test_wikidata_gemma3_1b_gpt-5.1.jsonl",
+      "bytes": 38232,
+      "sha256": "ce69040f1ffa33dbc3899d45bcafd4fdb0b82fd2b26b5473d0cc6dffad077f91",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/test_wikidata_gemma3_27b_gemini2.5-pro.jsonl",
+      "bytes": 35543,
+      "sha256": "aa1cf0e1530927a3e5fa4a88abb148f6187f1eb276e507e134cd36813a3aa812",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/test_wikidata_gemma3_27b_gpt-5.1.jsonl",
+      "bytes": 21736,
+      "sha256": "66836b6c774a38268b4e74410a25e82e1d4c2481bb27290212b3704c081fffca",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_test_zero_shot_gpt4.1_gpt-5.1.jsonl",
+      "bytes": 15107,
+      "sha256": "54f4749460fe5074b326357748938be9b44f8f97af8d45dd76cd1838c562febe",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_1.7B_cc_gemini2.5-pro.jsonl",
+      "bytes": 39068,
+      "sha256": "802959161754df15258e709d8bb946afa0994186e4678c7a82df7d01237bb380",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_1.7B_cc_gpt5.1.jsonl",
+      "bytes": 37804,
+      "sha256": "e7f3da7d22a0c7e534c1de2a64c617989009a0bbdd47deb47d902e9282223c90",
+      "group": "content_coverage",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_1.7B_gemini-2.5-pro.jsonl",
+      "bytes": 34259,
+      "sha256": "1a961fa7e555e8ac96874be5956ae4fb9d5689c582fec85ff99e0b485f1af5fd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_1.7B_gpt-5.1.jsonl",
+      "bytes": 30009,
+      "sha256": "708d3bd4c62e0b6d5250b83d9c5bfe345e3018363da8b7749b2b24c2099af7ee",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_32B_gemini-2.5-pro.jsonl",
+      "bytes": 25402,
+      "sha256": "121e5e597ebd83a83d8ff266ad888ca751c7353b65c5df094103d1add34f8b5b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_32B_gpt-5.1.jsonl",
+      "bytes": 23498,
+      "sha256": "8245a174542deda5d493a6aabed8a23c0a76b88fe16837e93cdd8d90be54bc3a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_8B_gemini-2.5-pro.jsonl",
+      "bytes": 26774,
+      "sha256": "9c0c67789a3e346fdd2076e503d13eb33882fc994e8432d597677d01b104873f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/eval_res/zero_shot/wikidata_zero_shot_qwen3_8B_gpt-5.1.jsonl",
+      "bytes": 18974,
+      "sha256": "8497f0563d138273101a075713328fd2312771cba15b939a33f76c108bf91971",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_base_responses.jsonl",
+      "bytes": 18180,
+      "sha256": "755c4642e90de6f8009abec1d8b1f066c9c0dc201ec6cb8d085a9c1531633b14",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_mixed_responses.jsonl",
+      "bytes": 19077,
+      "sha256": "07f513e5468cec2507174858d891db87564134b9f6a31cea73b062e2047a7ecd",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_pert_responses.jsonl",
+      "bytes": 19002,
+      "sha256": "1631b34d81cb06cd0a4c814808205ad5696077bc45baed77038ab4c19e824881",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_sft_lora/wikidata_ddkd_sft_lora_qwen3_1.7B_sub_responses.jsonl",
+      "bytes": 18594,
+      "sha256": "f0257e14f71efb3afbd5aaa771370e7282fd1b5640ef230e66ac62cbfbd680fa",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_sft_lora/wikidata_qwen3_32B_webnlg_mkd_mixed_responses.jsonl",
+      "bytes": 18475,
+      "sha256": "8832bdf5835b03e5431cc9c53a4535526f093dce27780e41d8978c1cc1969c66",
+      "group": "human_evaluation_support",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_sft_lora/wikidata_test_gemma3_1b_mixed_responses.jsonl",
+      "bytes": 18125,
+      "sha256": "b76ebb2f5975e642b3ea40082831faccf80a9e54d4b5a2e7119956f472113e2d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_base_responses.jsonl",
+      "bytes": 21908,
+      "sha256": "2853e9fb4462ee3b64cbebb46fdde5b4f4aab8ac7a211d6e3cdc0a7f271ccb16",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_mixed_responses.jsonl",
+      "bytes": 22423,
+      "sha256": "a4357557c88b795234fd8459933ae50224ca70e680f385959fc2c666a57b557e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_pert_responses.jsonl",
+      "bytes": 22432,
+      "sha256": "24660edd55de8a5a18bc1b865a92034b428d58a51dd239f2cbaf76091a260339",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/ddkd_zero_shot/wikidata_ddkd_zero_shot_qwen3_1.7B_sub_responses.jsonl",
+      "bytes": 21886,
+      "sha256": "879272cac75d6ed6a2405c1b23243a84debe73e6c685954a11e4ef1221c9dff7",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_1.7B_responses.jsonl",
+      "bytes": 19266,
+      "sha256": "8d24b7ac6d15d1865ef3e7efdf5e8c1fc5c72c0a993623cc81ef02745a91bb9a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_32B_responses.jsonl",
+      "bytes": 18738,
+      "sha256": "940e2fc7591528141ee682ceab75b80ba6a82f9470d26afaab16df2a77b2241d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/sft_lora/wikidata_sft_lora_on_webnlg_mkd_qwen3_8B_responses.jsonl",
+      "bytes": 18037,
+      "sha256": "466efb536602b0a9137e8736e2daebff4d225b38e2519a7b6dd52928b9e267e9",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/sft_lora/wikidata_test_gemma3_1B_sft_webnlg_markdown_responses.jsonl",
+      "bytes": 226999,
+      "sha256": "3b45bdd34e94953c7617f2b59af8f32da4ba9b27f2324059f13551f94aca0558",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/sft_lora/wikidata_test_gemma3_27B_sft_webnlg_markdown_responses.jsonl",
+      "bytes": 18032,
+      "sha256": "c563bba7c60b4ed19bd63d5c4533c28976bb626edade4fa533f2ca1e5ea34401",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/zero_shot/test_gemma3_1b_responses.jsonl",
+      "bytes": 22783,
+      "sha256": "d5fc00f1b80cebc530eeae2facfeb64c6bc8b843385f70ba104cae06bb997238",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/zero_shot/test_gemma3_27b_responses.jsonl",
+      "bytes": 26886,
+      "sha256": "8daf39bb918bf0dfdadf5e39f13cda96ebba316165092df9adacb0cb075d0aa1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/zero_shot/wikidata_test_chat_format_gpt4.1_responses.jsonl",
+      "bytes": 22953,
+      "sha256": "6d0fa403f4d38126f98d32cab7d3770e8e1f1feeaed9d80bc672e706f05670d1",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/zero_shot/wikidata_zero_shot_qwen3_1.7B_responses.jsonl",
+      "bytes": 22303,
+      "sha256": "6f5717c04aba23ef953998862d71dbda23c36b453ea2b1092371c6fd2d797f80",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/zero_shot/wikidata_zero_shot_qwen3_32B_responses.jsonl",
+      "bytes": 23025,
+      "sha256": "265b4109840d343453e36fe39bae4b727238e58b037d2af2716ac52eb7a05c0f",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd/wikidata/outputs/zero_shot/wikidata_zero_shot_qwen3_8B_responses.jsonl",
+      "bytes": 23519,
+      "sha256": "a9206f6c7ea44d33b41c4e8cc44dccb9cafaad6a72cfbc2eb082b6cac8bc777e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/gsmarena/eval_res/gsmarena_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_gpt-5.1.jsonl",
+      "bytes": 29319,
+      "sha256": "c1b406a488bf8acef589ef11a1af4979a5438725f327798623ee759ac01e495b",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/gsmarena/eval_res/gsmarena_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_gpt-5.1.jsonl",
+      "bytes": 24110,
+      "sha256": "fd6d0dd1a65c8f58de2976e692e503f220a14619151d471d0a95d603c907b373",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/gsmarena/outputs/gsmarena_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_responses.jsonl",
+      "bytes": 323148,
+      "sha256": "1b6afba9865d30c8d4d48a68b9c0abb7d3c9d0ddb9c8bf5cf55fa02a692600ad",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/gsmarena/outputs/gsmarena_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_responses.jsonl",
+      "bytes": 107050,
+      "sha256": "5b9cf75c92c17bf85c7f50ce91339c811f72c497832e10844f9f96f610eef715",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/ice_hockey/eval_res/ice_hockey_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_gpt-5.1.jsonl",
+      "bytes": 14160,
+      "sha256": "bbd20030dd72ccd32517b378572cc3249b8a02c5d49bf8e1f777a8df7e9b370d",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/ice_hockey/eval_res/ice_hockey_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_gpt-5.1.jsonl",
+      "bytes": 27633,
+      "sha256": "71e53db34af24861109e98f678089e172f3c80ce84a67586a2cf14e3b051e68d",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/ice_hockey/outputs/ice_hockey_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_responses.jsonl",
+      "bytes": 22732,
+      "sha256": "217648f91ff0afa4b8efdd507185bbd2b8c2d12d35551e7f3fcb54b158218c1c",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/ice_hockey/outputs/ice_hockey_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_responses.jsonl",
+      "bytes": 44540,
+      "sha256": "4c59a3161bb910271949b4e505e83e4e4f2a60e0e22e09b6f789ca846921b9de",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/owid/eval_res/owid_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_gpt-5.1.jsonl",
+      "bytes": 31288,
+      "sha256": "f974e609b22efc150dcb29a96fe2dd1f4562bc71a4f9910d2796dd1da01323a4",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/owid/eval_res/owid_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_gpt-5.1.jsonl",
+      "bytes": 38140,
+      "sha256": "ec847c6523d58eac9f05d8e768d361748e70dea6a3a2c2a9f69f96fa40ad6c4f",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/owid/outputs/owid_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_responses.jsonl",
+      "bytes": 76205,
+      "sha256": "a800cb3e4f376e67681186965eab87ffdaa7fdbd7111e6d13037d8439e6f921e",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/owid/outputs/owid_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_responses.jsonl",
+      "bytes": 40260,
+      "sha256": "e2e5e346c95eda256e0e551aebb4380204dacbbbd3c4d02c0546b855ab865a0b",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/weather/eval_res/weather_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_gpt-5.1.jsonl",
+      "bytes": 55811,
+      "sha256": "7ff3dde1fc3e37047365b08c3889c61d588203ed2c1a89f7b3240f602da4e9dd",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/weather/eval_res/weather_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_gpt-5.1.jsonl",
+      "bytes": 86080,
+      "sha256": "172598613e1975946e61da8844c2b1c3689bc7cbc0c990a28614608292d366b7",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/weather/outputs/weather_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_responses.jsonl",
+      "bytes": 126661,
+      "sha256": "7e4e59fffe3655b0d9f47cb9ad159d5db8c795af531a65027982b17ea0331901",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/weather/outputs/weather_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_responses.jsonl",
+      "bytes": 73466,
+      "sha256": "9037b43b48db5da8a49b01fc938197e93e7b95c70979640a40daebfcb229c90e",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/wikidata/eval_res/wikidata_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_gpt-5.1.jsonl",
+      "bytes": 17380,
+      "sha256": "9f8367decca12dcdc9fdeba382751b9c4d0d28990998f5cf266bda1036700a1c",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/wikidata/eval_res/wikidata_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_gpt-5.1.jsonl",
+      "bytes": 22258,
+      "sha256": "9a1a3a7e37ded4f0d98dde38761ee1be89389f229b8ebb00029c86857c989335",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/wikidata/outputs/wikidata_qwen3_1.7B_lora_rank8_alpha32_quintd5_SFT_responses.jsonl",
+      "bytes": 18912,
+      "sha256": "3b61c2f5ebb64652daed6a6b9a08d4e74a13c7cc90c93742846c7238f22daa1c",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/model_outputs/quintd5/wikidata/outputs/wikidata_qwen3_1.7B_lora_rank8_alpha32_quintd5_ZS_responses.jsonl",
+      "bytes": 22623,
+      "sha256": "c6d0f1299521c7ba74331a09af21b860cf569ae55d97428201cdf6c7a943039c",
+      "group": "quintd5_results",
+      "records": 100
+    },
+    {
+      "path": "data/results/table4_error_counts.csv",
+      "bytes": 925,
+      "sha256": "8936c26927f3c5ba837405d4729f62228d56dc43f2884612f27578f46268a4d1",
+      "group": "table_summaries"
+    },
+    {
+      "path": "data/results/table4_sources.json",
+      "bytes": 11246,
+      "sha256": "df13085d60d72a2a044c70ed70b52ecc5e3c920eb91661770e4da63b5b7f6efa",
+      "group": "table_summaries"
+    },
+    {
+      "path": "data/test/quintd/gsmarena/gsmarena_test_chat_format.jsonl",
+      "bytes": 371591,
+      "sha256": "6b25536c66ed5b77bbbbc62817480c479f70568d561059461594895fc8922019",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/gsmarena/gsmarena_test_chat_format_gemma.jsonl",
+      "bytes": 369291,
+      "sha256": "b378d6655b2f1e34014bb1e0dcacb12dcbd55f23aacc3fd729b3bda733231d06",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/gsmarena/test_input_table.jsonl",
+      "bytes": 526638,
+      "sha256": "bb447df5f2544600c53e4823ef3c2ca949bcdddf18b4621792b1365d00528e20",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/ice_hockey/ice_hockey_test_chat_format.jsonl",
+      "bytes": 103203,
+      "sha256": "eaa6810cd17e0f55adf63622b25f950d86acc8c348d34977d6e05b47ab5bc280",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/ice_hockey/ice_hockey_test_chat_format_gemma.jsonl",
+      "bytes": 100903,
+      "sha256": "b8f8579d525de5f4220d266e658edc57711580b72305fe9be13c3cbfccdbf391",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/ice_hockey/test_input_table.jsonl",
+      "bytes": 200860,
+      "sha256": "44b235d2cca0c35d5bae0db40042d1a2000380051fc881111d5a3746bd50dc8b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/owid/owid_test_chat_format.jsonl",
+      "bytes": 452036,
+      "sha256": "1eba5ab6ba62340e12ec4f7937e39895a34f0db31f08867886ad8fcbbf63c796",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/owid/owid_test_chat_format_gemma.jsonl",
+      "bytes": 449736,
+      "sha256": "b4845d5b81bb093c0c40c44d8ca134b6d21f9bc6fe51c26161eb563e6e001d58",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/owid/test_input_table.jsonl",
+      "bytes": 1635435,
+      "sha256": "93701f982006dcf2696a4ec14a0804f2abc2c218f19e731f78bd7ed6bfddcf92",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/weather/test_input_table.jsonl",
+      "bytes": 2657431,
+      "sha256": "7f5fa91a27273d857a7edfccb2625151a80cb6b8cc16bbcdbb579a63a02a22e5",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/weather/weather_test_chat_format.jsonl",
+      "bytes": 677560,
+      "sha256": "aab1664d54753fa17e2a4ea048029124011b32ba760ce0c082d5780634b2369a",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/weather/weather_test_chat_format_gemma.jsonl",
+      "bytes": 675260,
+      "sha256": "0d1517f5aebafb7f37f88a46c4dc8727dcd2f40a59f98ad8f445cf31bbb76b38",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/wikidata/test_input_table.jsonl",
+      "bytes": 71508,
+      "sha256": "aaab15b93c9a68ab46f4cc4322fc58b23f7c806dedc5b3c523c9443436a00d7b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/wikidata/wikidata_test_chat_format.jsonl",
+      "bytes": 68399,
+      "sha256": "c02b00de5f43ff19624a43add26883e771d440a33667333ac75d6397b6f1f26c",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/test/quintd/wikidata/wikidata_test_chat_format_gemma.jsonl",
+      "bytes": 66099,
+      "sha256": "39ec5186ae63ac3b60c15f5b8e36ec3aa63664dcf00c0bd890666a3cdace8ea6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/SFT/gemma/webnlg_dev_en_csv_gemma.jsonl",
+      "bytes": 3227910,
+      "sha256": "8570376642ffa3866e90fd8c9909794c74f58b6e86a50837bdc023321a01ca20",
+      "group": "existing_release",
+      "records": 4464
+    },
+    {
+      "path": "data/train/SFT/gemma/webnlg_dev_en_json_gemma.jsonl",
+      "bytes": 2982847,
+      "sha256": "23aa0ffe2b50c3e57aa0f023ea298d289252491a4fcf9f3f4efc608a4956e3dd",
+      "group": "existing_release",
+      "records": 4464
+    },
+    {
+      "path": "data/train/SFT/gemma/webnlg_dev_en_markdown_gemma.jsonl",
+      "bytes": 3034466,
+      "sha256": "c660777f671d24f986304e73aae537de54190abf4797361647a91ca224aad146",
+      "group": "existing_release",
+      "records": 4463
+    },
+    {
+      "path": "data/train/SFT/gemma/webnlg_train_en_csv_gemma.jsonl",
+      "bytes": 25578670,
+      "sha256": "0ef046f85fc1dc2b99b1ba177068ef82c61273885377cf09884417d28776db6e",
+      "group": "existing_release",
+      "records": 35426
+    },
+    {
+      "path": "data/train/SFT/gemma/webnlg_train_en_json_gemma.jsonl",
+      "bytes": 23673131,
+      "sha256": "3216a9804a25f430b3fb6a4be505edb00d253ee041cdb00f63feda91c696ee09",
+      "group": "existing_release",
+      "records": 35426
+    },
+    {
+      "path": "data/train/SFT/gemma/webnlg_train_en_markdown_gemma.jsonl",
+      "bytes": 24085554,
+      "sha256": "0b9b215c31588771ffdf6220af30c1d14fe1d4552684bb40ab930496b147572a",
+      "group": "existing_release",
+      "records": 35422
+    },
+    {
+      "path": "data/train/SFT/qwen/webnlg_dev_en_csv.jsonl",
+      "bytes": 3330582,
+      "sha256": "4c4f8f8fe9cda6239d236f04ea82563e12f1fb33aeee449e681d652f528c610f",
+      "group": "existing_release",
+      "records": 4464
+    },
+    {
+      "path": "data/train/SFT/qwen/webnlg_dev_en_json.jsonl",
+      "bytes": 3085519,
+      "sha256": "a9fc1ace36431542ee3554c1a923b0936d76ec6775db4a979801099e3c05bf3b",
+      "group": "existing_release",
+      "records": 4464
+    },
+    {
+      "path": "data/train/SFT/qwen/webnlg_dev_en_markdown.jsonl",
+      "bytes": 3137115,
+      "sha256": "0c3e36f0a2860d782fe7b216b297c89dff0ba9fbdba390054d069b50b9442ecc",
+      "group": "existing_release",
+      "records": 4463
+    },
+    {
+      "path": "data/train/SFT/qwen/webnlg_train_en_csv.jsonl",
+      "bytes": 26393468,
+      "sha256": "5dd46852718e6fb5eabd1f40ca40d724fcc6ef26065b76516d2445afaff066a5",
+      "group": "existing_release",
+      "records": 35426
+    },
+    {
+      "path": "data/train/SFT/qwen/webnlg_train_en_json.jsonl",
+      "bytes": 24487929,
+      "sha256": "de5c9a0818d9f87348fb87116e1b8f29e5bda003586d3e90c7146851aa53cbc9",
+      "group": "existing_release",
+      "records": 35426
+    },
+    {
+      "path": "data/train/SFT/qwen/webnlg_train_en_markdown.jsonl",
+      "bytes": 24900260,
+      "sha256": "1f7c5085704b3cc6f1ed816ec862af63b37ebf23deb59fb4e26633470c0ee388",
+      "group": "existing_release",
+      "records": 35422
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/dev_chat_format_zero_shot_gsmarena_base.jsonl",
+      "bytes": 375656,
+      "sha256": "5e3216b1617c3c8edc628246b5bcf220070b853a72907d64420dafc25558ddfe",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/dev_chat_format_zero_shot_gsmarena_mixed.jsonl",
+      "bytes": 6404915,
+      "sha256": "7b210c40f59c930aaf31e023e747fbdc93ebd8c383ea032a06ebeb9b47cd81b7",
+      "group": "existing_release",
+      "records": 2762
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/dev_chat_format_zero_shot_gsmarena_pert.jsonl",
+      "bytes": 3209875,
+      "sha256": "9eadb08ed3eec532e0a5636957c96ddfbd645bdab8d06f08ef93a101849ba4da",
+      "group": "existing_release",
+      "records": 1381
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/dev_chat_format_zero_shot_gsmarena_sub_train.jsonl",
+      "bytes": 2715058,
+      "sha256": "aec8a372c04b9a84600824c24edaac97431310008ff0fa51cda652a2829ae2de",
+      "group": "existing_release",
+      "records": 1174
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/dev_chat_format_zero_shot_gsmarena_sub_val.jsonl",
+      "bytes": 479982,
+      "sha256": "bf38e381c4596ea45bcc9df1b0c65cbf5db37dcb309af9e68301c6574f515082",
+      "group": "existing_release",
+      "records": 207
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/gemma3/dev_chat_format_zero_shot_gsmarena_mixed_gemma.jsonl",
+      "bytes": 5866168,
+      "sha256": "082701e6ef8bdeea756ed382f46b65e168f9fa6e94a9b19ef20e38ecf407b64a",
+      "group": "existing_release",
+      "records": 2555
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/gemma3/dev_chat_format_zero_shot_gsmarena_pert_gemma.jsonl",
+      "bytes": 3178112,
+      "sha256": "2e68ef5e0fe5ae54214c20ecce6650d69a252e71af1073e7fe3fb2127cef7ce2",
+      "group": "existing_release",
+      "records": 1381
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/gemma3/dev_chat_format_zero_shot_gsmarena_sub_train_gemma.jsonl",
+      "bytes": 2688056,
+      "sha256": "fee8b37e547a64f530b23483fd5ec590ec22c980a3fc712ddb13b3adc537e25c",
+      "group": "existing_release",
+      "records": 1174
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/gemma3/dev_chat_format_zero_shot_gsmarena_sub_val_gemma.jsonl",
+      "bytes": 475221,
+      "sha256": "e20138db65c411c567dd69d07cb97787123e89edd97b8655364031922e56878d",
+      "group": "existing_release",
+      "records": 207
+    },
+    {
+      "path": "data/train/quintd/gsmarena/inputs/val_indices_gsmarena_aug.json",
+      "bytes": 1971,
+      "sha256": "02d426142ab0e9871d50e28fee6dcf8e3c76b1f8a7e7f88fff64ad0d27baa7bc",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_sft_lora/dev_qwen3_32B_sft_base.jsonl",
+      "bytes": 552158,
+      "sha256": "24875c7b72f456db3a9125ae2ca6b2520c116393c82be8b011a68f604746196d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_sft_lora/dev_qwen3_32B_sft_mixed.jsonl",
+      "bytes": 10935983,
+      "sha256": "78381283b24952f9619ac82c3c4858209d6dadaefecf684c88a72a5fbfa9f7c9",
+      "group": "existing_release",
+      "records": 2762
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_sft_lora/dev_qwen3_32B_sft_pert.jsonl",
+      "bytes": 5507125,
+      "sha256": "300933f72e67e94008af38b2009765badab6bbbf575862491304b61afcbc585f",
+      "group": "existing_release",
+      "records": 1381
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_sft_lora/dev_qwen3_32B_sft_sub_train.jsonl",
+      "bytes": 4613882,
+      "sha256": "06ac271c213beb3b866ed545c287bc407955c29615394eb8475ce6241aa4ad35",
+      "group": "existing_release",
+      "records": 1174
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_sft_lora/dev_qwen3_32B_sft_sub_val.jsonl",
+      "bytes": 793784,
+      "sha256": "109c11310f6755c4b80fe445d81d09c432b5546bb962a2d4da2b3eaaaf029c97",
+      "group": "existing_release",
+      "records": 207
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_gemma3_27b_ZS_mixed.jsonl",
+      "bytes": 9302852,
+      "sha256": "544bc18b6493e3b06110d6942b4d267cb786d01cfac9f28837919464c53c6ecf",
+      "group": "existing_release",
+      "records": 2555
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_gemma3_27b_ZS_sub_val.jsonl",
+      "bytes": 750687,
+      "sha256": "13d2e8c7d8f21302764ea08330b9fa2eda7771d737650c05873a56ab84284059",
+      "group": "existing_release",
+      "records": 207
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_qwen3_32B_ZS_base.jsonl",
+      "bytes": 607706,
+      "sha256": "102eea650d2305d43a1590a3cfa9b6c06513ad9c02bd61914c0b6d2c15e91e4e",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_qwen3_32B_ZS_mixed.jsonl",
+      "bytes": 11115073,
+      "sha256": "824165e75b90eeda1362073eabb082193b95ca30c7cad8df771a891b8bbccb1d",
+      "group": "existing_release",
+      "records": 2762
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_qwen3_32B_ZS_pert.jsonl",
+      "bytes": 5559523,
+      "sha256": "95acbaaa1fc1a9ea9a3ae0d07970c10f921992a40349a7424a3601e537ff3d05",
+      "group": "existing_release",
+      "records": 1381
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_qwen3_32B_ZS_sub_train.jsonl",
+      "bytes": 4712472,
+      "sha256": "e2e1178f95ca011a4716596de018e51fc88a83d49a9316a4c67eb323a435fffe",
+      "group": "existing_release",
+      "records": 1174
+    },
+    {
+      "path": "data/train/quintd/gsmarena/qwen3_zero_shot/dev_qwen3_32B_ZS_sub_val.jsonl",
+      "bytes": 838658,
+      "sha256": "01b9ff6407f778c46612fc71a0129ee14ed175c426653b43394043ea4378f59a",
+      "group": "existing_release",
+      "records": 207
+    },
+    {
+      "path": "data/train/quintd/gsmarena/val_indices_gsmarena_aug.json",
+      "bytes": 1971,
+      "sha256": "02d426142ab0e9871d50e28fee6dcf8e3c76b1f8a7e7f88fff64ad0d27baa7bc",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/gemma3_27b_it_sft_lora/dev_chat_format_sft_lora_ice_hockey_sub_train_gemma3_27b.jsonl",
+      "bytes": 28713979,
+      "sha256": "1895d9e534a04ea9c55fd4b85176293503d345ddd1d7cf2f890bbab6198d5d54",
+      "group": "existing_release",
+      "records": 21675
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/gemma3_27b_it_sft_lora/dev_chat_format_sft_lora_ice_hockey_sub_val_gemma3_27b.jsonl",
+      "bytes": 5078465,
+      "sha256": "64220ccc21eec9514a2cc7faf984942e7a7628d454b2c368784d72f87e0cf212",
+      "group": "existing_release",
+      "records": 3825
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/inputs/dev_chat_format_zero_shot_ice_hockey_base.jsonl",
+      "bytes": 102839,
+      "sha256": "36da00fdcf4dfade68a3c481f9470b19d3d4534ca7519e0c5614666bc58b1eb8",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/inputs/dev_chat_format_zero_shot_ice_hockey_mixed.jsonl",
+      "bytes": 37705437,
+      "sha256": "5605e5839ce0d8666d10340f77596d92e001367aa211ff0038d98781dd44f14a",
+      "group": "existing_release",
+      "records": 51000
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/inputs/dev_chat_format_zero_shot_ice_hockey_pert.jsonl",
+      "bytes": 18852445,
+      "sha256": "6047f9ecf8f8cc49c90931ad502f94d2556a29b3068aa791e47a02b4721c57cf",
+      "group": "existing_release",
+      "records": 25500
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/inputs/dev_chat_format_zero_shot_ice_hockey_sub.jsonl",
+      "bytes": 18852992,
+      "sha256": "1d45b1c83ffdb743f5475a7c5e8ccce38f72efe55bf25f60bfc0af29456b0621",
+      "group": "existing_release",
+      "records": 25500
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/inputs/gemma3/dev_chat_format_zero_shot_ice_hockey_sub_train.jsonl",
+      "bytes": 15519705,
+      "sha256": "4043cf2c609aa0ea83f7d7b973f0e60762eab0e602bbfcb436741ae67753e69e",
+      "group": "existing_release",
+      "records": 21675
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/inputs/gemma3/dev_chat_format_zero_shot_ice_hockey_sub_val.jsonl",
+      "bytes": 2746787,
+      "sha256": "1c3a36eb2e1644d41171d673d8cf6e278cc0ef1be06b8e1ecca6d3b5bf0d6326",
+      "group": "existing_release",
+      "records": 3825
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_sft_lora/dev_chat_format_sft_lora_ice_hockey_base.jsonl",
+      "bytes": 162551,
+      "sha256": "184a94f51520620d18035b51223bb771c80bdf138d1a3cd4b1958af590bef56b",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_sft_lora/dev_chat_format_sft_lora_ice_hockey_mixed.jsonl",
+      "bytes": 66031547,
+      "sha256": "926f974fd7b25bccf156fb54432c94ac9997fbf006fabf87b9368f9214c7949a",
+      "group": "existing_release",
+      "records": 51000
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_sft_lora/dev_chat_format_sft_lora_ice_hockey_pert.jsonl",
+      "bytes": 33014417,
+      "sha256": "deb14447a86bc927f7414d71a93fdcd92f12a8672478adda3bdc60f4e278b868",
+      "group": "existing_release",
+      "records": 25500
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_sft_lora/dev_chat_format_sft_lora_ice_hockey_sub_train.jsonl",
+      "bytes": 28038498,
+      "sha256": "0a7d97c759d2fca85705458a896b9c4d462441e57b85fe5648d3c00a8a74a94a",
+      "group": "existing_release",
+      "records": 21675
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_sft_lora/dev_chat_format_sft_lora_ice_hockey_sub_val.jsonl",
+      "bytes": 4972970,
+      "sha256": "8d118f2c8e5f4ec1d3de4b52214e7117737b841b901a67cb1c39e6b9affcbc1c",
+      "group": "existing_release",
+      "records": 3825
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_zero_shot/dev_qwen3_32B_zero_shot_base.jsonl",
+      "bytes": 199373,
+      "sha256": "18b0d3c9cf70b02165f761ee4346a088fea005e1bc53abd3125eba8a49fb81b6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_zero_shot/dev_qwen3_32B_zero_shot_mixed.jsonl",
+      "bytes": 75411261,
+      "sha256": "c8f74da1ae296236e0dec02b54b81095646e8c5b14e839de08bd4d965f6df2d1",
+      "group": "existing_release",
+      "records": 51000
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_zero_shot/dev_qwen3_32B_zero_shot_pert.jsonl",
+      "bytes": 37660971,
+      "sha256": "77a9c235f81b722f387e3d8e31091abc3a6e9d5aacab6adc80e1de5038d5571f",
+      "group": "existing_release",
+      "records": 25500
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_zero_shot/dev_qwen3_32B_zero_shot_sub_train.jsonl",
+      "bytes": 32043830,
+      "sha256": "3e4e29a21f9697cbc4cb3ad803974633dfafebd74d1d3a423459daa90028614f",
+      "group": "existing_release",
+      "records": 21675
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/qwen3_32B_zero_shot/dev_qwen3_32B_zero_shot_sub_val.jsonl",
+      "bytes": 5667194,
+      "sha256": "1d9b267b1895b63c3915152fe5fd8ef75ba66a4fac92db42f23310883c311cca",
+      "group": "existing_release",
+      "records": 3825
+    },
+    {
+      "path": "data/train/quintd/ice_hockey/val_indices_ice_hockey_aug.json",
+      "bytes": 40477,
+      "sha256": "91958cd99dbbde9ca3488581c3f051342ba1fd3a8cf7e618f34266d885cb12a4",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/quintd/owid/gemma3_27b_sft_lora/dev_gemma3_27B_sft_pert_gemma.jsonl",
+      "bytes": 6167720,
+      "sha256": "3ceceb0b69c690b939990c5f081c356cdc1b30cd7315683a3cadd7173c0459ec",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/gemma3_27b_sft_lora/dev_gemma3_27B_sft_sub_gemma_train.jsonl",
+      "bytes": 5049363,
+      "sha256": "7b1d9731351500d27ff107fc87acb1dfbc5ff04ff85eac145d25bb1f5be445c3",
+      "group": "existing_release",
+      "records": 850
+    },
+    {
+      "path": "data/train/quintd/owid/gemma3_27b_sft_lora/dev_gemma3_27B_sft_sub_gemma_val.jsonl",
+      "bytes": 848175,
+      "sha256": "1843c3bcb06937d5b111ff70a9cb272d5b69c6e0fedcfd8eba853f2f11cbf60c",
+      "group": "existing_release",
+      "records": 150
+    },
+    {
+      "path": "data/train/quintd/owid/gemma3_27b_sft_lora/dev_gemma3_27b_sft_mixed.jsonl",
+      "bytes": 11217083,
+      "sha256": "3daa0ebe5ce22e60141a6da3f0cafcac3b9b7805f5ae0d0f5440b06a8180c027",
+      "group": "existing_release",
+      "records": 1850
+    },
+    {
+      "path": "data/train/quintd/owid/inputs/dev_chat_format_zero_shot_owid_base.jsonl",
+      "bytes": 481189,
+      "sha256": "46611d1913e27c43d68688b75498f3b6adb3782b941d0c39d99a6478ba8345b4",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/owid/inputs/dev_chat_format_zero_shot_owid_pert.jsonl",
+      "bytes": 2957552,
+      "sha256": "a58fd7db6eb276691d62000f046d0e85abfdba7aa0a2f573bd733b0d5d6ceb32",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/inputs/dev_chat_format_zero_shot_owid_sub.jsonl",
+      "bytes": 2957552,
+      "sha256": "4eadc1e9a053c2597942cdb1bed7e90fa3cac64137ee732e3a1be2477cc58ebe",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/inputs/gemma3/dev_chat_format_zero_shot_owid_pert_gemma.jsonl",
+      "bytes": 2934552,
+      "sha256": "c8360178c2cf2e9952c4b476aebba3d5d8cb77c732aa5b1ab0537a504f2558a8",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/inputs/gemma3/dev_chat_format_zero_shot_owid_sub_gemma.jsonl",
+      "bytes": 2934552,
+      "sha256": "cb9ec2d230665c88c7d52c0fd69a2664118d55c1b0d8235abb03f5265d45a5d2",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_sft_lora/dev_qwen3_32B_sft_base.jsonl",
+      "bytes": 807123,
+      "sha256": "29c80713952db5aaa390fed216b77781bab275ebbdf533ae42a7f95d82ccc995",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_sft_lora/dev_qwen3_32B_sft_mixed.jsonl",
+      "bytes": 10976331,
+      "sha256": "13ab942340ae9fc347952f262d088f9fcf9b5872522f2b80039665c5074273e9",
+      "group": "existing_release",
+      "records": 1850
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_sft_lora/dev_qwen3_32B_sft_pert.jsonl",
+      "bytes": 6295746,
+      "sha256": "d54f5fe7cd48d526fd3b1053e43b5cb9593519d69fab89dddc830893f670611b",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_sft_lora/dev_qwen3_32B_sft_sub_train.jsonl",
+      "bytes": 4680585,
+      "sha256": "b5fedd0a5f5c5c9d4ed8ca71963cab281bd967369c204d1c7cb0f36b310b08ba",
+      "group": "existing_release",
+      "records": 850
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_sft_lora/dev_qwen3_32B_sft_sub_val.jsonl",
+      "bytes": 855897,
+      "sha256": "cccbf5cfbaec1319d77fe680e96dd4bab3142e47a4cf8356865354a913cb3c0e",
+      "group": "existing_release",
+      "records": 150
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_zero_shot/dev_qwen3_32B_ZS_aug_train.jsonl",
+      "bytes": 3429969,
+      "sha256": "199d84cc4d6c836c632d46f8f80beef72ae118921bfbe885d79eb1185e2b1957",
+      "group": "existing_release",
+      "records": 850
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_zero_shot/dev_qwen3_32B_ZS_aug_val.jsonl",
+      "bytes": 602273,
+      "sha256": "784004e83d1b30cde4649c4ac47a053c192cb7684fe55aa845501f4325c1bf1c",
+      "group": "existing_release",
+      "records": 150
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_zero_shot/dev_qwen3_32B_ZS_base.jsonl",
+      "bytes": 582315,
+      "sha256": "519d8bc2636b61d5e8cde5ef24309de240a4b09248b2462c45287a7ce178f77d",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_zero_shot/dev_qwen3_32B_ZS_mixed.jsonl",
+      "bytes": 7535277,
+      "sha256": "e1dd903c3a6500cb251162803ee01b45e3fa7f8a272da0f694af54b28eb5bac2",
+      "group": "existing_release",
+      "records": 1850
+    },
+    {
+      "path": "data/train/quintd/owid/qwen3_32B_zero_shot/dev_qwen3_32B_ZS_pert.jsonl",
+      "bytes": 4105308,
+      "sha256": "9217570843bf332a3d5a2443f29fad66fd0a76f1472cbdf76c38dd6280f24723",
+      "group": "existing_release",
+      "records": 1000
+    },
+    {
+      "path": "data/train/quintd/owid/val_indices_owid_aug.json",
+      "bytes": 1400,
+      "sha256": "6f0b0498aa5099120de60a6aea4166dbb8dff5e709b5cba56fb2b2ec473d5331",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/quintd/weather/gemma3_27b_sft_lora/weather_dev_gemma3_27b_sft_webnlg_json_sub_train.jsonl",
+      "bytes": 11788433,
+      "sha256": "b8732033d676288b777478a03c7f913963588cbdf5eefc0c8241a88b463ff0c0",
+      "group": "existing_release",
+      "records": 1001
+    },
+    {
+      "path": "data/train/quintd/weather/gemma3_27b_sft_lora/weather_dev_gemma3_27b_sft_webnlg_json_sub_val.jsonl",
+      "bytes": 1172141,
+      "sha256": "e65b99836167dd719d1df97aef07960465ef6a2a465586bc365fd6394ef59038",
+      "group": "existing_release",
+      "records": 99
+    },
+    {
+      "path": "data/train/quintd/weather/inputs/weather_dev_chat_format_base.jsonl",
+      "bytes": 1284347,
+      "sha256": "83952108bf73828b0191b91d196b8fe9b6b5af2a72254491a06a4b2ead5229ad",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/weather/inputs/weather_dev_chat_format_pert.jsonl",
+      "bytes": 6981394,
+      "sha256": "9d2e18e465ec581457f014724d545b7b43fe85f2d066a6e7a8132868474ac0ae",
+      "group": "existing_release",
+      "records": 1100
+    },
+    {
+      "path": "data/train/quintd/weather/inputs/weather_dev_chat_format_sub.jsonl",
+      "bytes": 6981900,
+      "sha256": "c78c71312244adf5bb8a130367f9caf52e67cd73e82e43fd4bbf56858fef7207",
+      "group": "existing_release",
+      "records": 1100
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_sft_lora/weather_dev_by_qwen3_32b_sft_webnlg_json_base.jsonl",
+      "bytes": 1638601,
+      "sha256": "82344a081dacdfcd6a3ee32d1ffc1dcaa5f87fba069ad3433ee6eadc231ee6d6",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_sft_lora/weather_dev_by_qwen3_32b_sft_webnlg_json_mixed.jsonl",
+      "bytes": 18561246,
+      "sha256": "d9f5f44fde6925fde087733ed73d2b5722452dc0a2f9c6c185b8e5173e647cfe",
+      "group": "existing_release",
+      "records": 2101
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_sft_lora/weather_dev_by_qwen3_32b_sft_webnlg_json_pert.jsonl",
+      "bytes": 9692318,
+      "sha256": "e786486b18970c08d67cff97b5fa3f5520401226db33043606066fdd67745da8",
+      "group": "existing_release",
+      "records": 1100
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_sft_lora/weather_dev_by_qwen3_32b_sft_webnlg_json_sub_train.jsonl",
+      "bytes": 8868928,
+      "sha256": "abf0f57753f612479613202bb54adba82a7e88dd17ca0f25d61b8dcd34e80d9a",
+      "group": "existing_release",
+      "records": 1001
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_sft_lora/weather_dev_by_qwen3_32b_sft_webnlg_json_sub_val.jsonl",
+      "bytes": 915194,
+      "sha256": "f8cf022fe5209329ba16a39e0a5d9c81585bfae297b889174a3902bad4f82bb7",
+      "group": "existing_release",
+      "records": 99
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_zero_shot/weather_dev_by_qwen3_32b_ZS_aug_train.jsonl",
+      "bytes": 8025840,
+      "sha256": "cf24cc84ded14e5eb3bce2f33b6a152402531be01813115b2b3171f6ad9c679d",
+      "group": "existing_release",
+      "records": 1001
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_zero_shot/weather_dev_by_qwen3_32b_ZS_aug_val.jsonl",
+      "bytes": 796818,
+      "sha256": "ef3f60aff34e74740f8eb0cc87aca4062d170d65c6a626c14b064f70b9d38c6d",
+      "group": "existing_release",
+      "records": 99
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_zero_shot/weather_dev_by_qwen3_32b_ZS_base.jsonl",
+      "bytes": 1454355,
+      "sha256": "260358c0c0c99c32f67236ba40fde1247c1800164c62f9b12fa7d3d73100a142",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_zero_shot/weather_dev_by_qwen3_32b_ZS_mixed.jsonl",
+      "bytes": 16866410,
+      "sha256": "7f209ebdc4b9fc473a928d685d7cb4c6047aba931c20fe518f3e9cf9ba9f63a2",
+      "group": "existing_release",
+      "records": 2101
+    },
+    {
+      "path": "data/train/quintd/weather/qwen3_32B_zero_shot/weather_dev_by_qwen3_32b_ZS_pert.jsonl",
+      "bytes": 8840570,
+      "sha256": "d8b6988570c185e5c28df27788ba4369d46ee46def51f4e698f7ba75b4516e5d",
+      "group": "existing_release",
+      "records": 1100
+    },
+    {
+      "path": "data/train/quintd/weather/val_indices_weather_aug.json",
+      "bytes": 958,
+      "sha256": "5024b8672d83331946d03574b55a76e1870c8ca94cb7a45c6bb16295ce8043f9",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/gemma3/wikidata_dev_chat_format_mixed_gemma3.jsonl",
+      "bytes": 40397715,
+      "sha256": "a609bd64a1da460680b27242a40ba9dabf2b49a3dc57a5fb6406bc0e6c9f140c",
+      "group": "existing_release",
+      "records": 65256
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/gemma3/wikidata_dev_chat_format_sub_val_gemma3.jsonl",
+      "bytes": 3034608,
+      "sha256": "df26f6d2dc7ef6b1dc482071f847f90fec638dbd4c05a8f193e39de7e284e030",
+      "group": "existing_release",
+      "records": 4894
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/val_indices_wikidata_aug.json",
+      "bytes": 52235,
+      "sha256": "a1c6ef3383f7b314ba5abca2c62abf72f2768581b07e592eaa5983aaa21ee884",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/wikidata_dev_chat_format_zero_shot_as_paper_base.jsonl",
+      "bytes": 67822,
+      "sha256": "33a171577e68675c174ba90acd0c5f1f548dc25bf017ec14245b175b26aa5bde",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/wikidata_dev_chat_format_zero_shot_as_paper_mixed.jsonl",
+      "bytes": 41898603,
+      "sha256": "30a9f39111c7a51c06a3eec9c3d32cd2e3ca09dc4cb8db569c6df8eef1ba32ee",
+      "group": "existing_release",
+      "records": 65256
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/wikidata_dev_chat_format_zero_shot_as_paper_pert.jsonl",
+      "bytes": 20926852,
+      "sha256": "29cb19a4f2a5ccac13e4978b2aa7ca91238edd2c40ef7e012e00eff5708b03ae",
+      "group": "existing_release",
+      "records": 32628
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/wikidata_dev_chat_format_zero_shot_as_paper_sub_train.jsonl",
+      "bytes": 17824581,
+      "sha256": "a0d42dc9d7a04566677146ca0965f68e93b36b8950b78667c8f431ac4cc17bfd",
+      "group": "existing_release",
+      "records": 27734
+    },
+    {
+      "path": "data/train/quintd/wikidata/inputs/wikidata_dev_chat_format_zero_shot_as_paper_sub_val.jsonl",
+      "bytes": 3147170,
+      "sha256": "acaa6ee8db25411d0ea11201e7e57e94a0698e21df1118e41af3de210827e085",
+      "group": "existing_release",
+      "records": 4894
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_webnlg_mkd/wikidata_train_gemma3_27B_webnlg_mkd_mixed.jsonl",
+      "bytes": 70274055,
+      "sha256": "f0775825da9ad928e26d2583a75503d8f5000216ce0108affed892f8c7134600",
+      "group": "existing_release",
+      "records": 65256
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_webnlg_mkd/wikidata_train_gemma3_27B_webnlg_mkd_sub_val.jsonl",
+      "bytes": 5243362,
+      "sha256": "230bf3ae47c33d5a7114dc2275af1441e45e63afda2129c6727163b7d686894a",
+      "group": "existing_release",
+      "records": 4894
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_webnlg_mkd/wikidata_train_qwen3_32B_webnlg_mkd_base.jsonl",
+      "bytes": 119460,
+      "sha256": "ba60562a2234dac03421ab2581527e84401f88a31a92776acea2a546513e73bb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_webnlg_mkd/wikidata_train_qwen3_32B_webnlg_mkd_mixed.jsonl",
+      "bytes": 75282445,
+      "sha256": "dfcc03342b749bf61dda930d79b230072af0b56ae89fadeeb1a4e53974d5af74",
+      "group": "existing_release",
+      "records": 65256
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_webnlg_mkd/wikidata_train_qwen3_32B_webnlg_mkd_pert.jsonl",
+      "bytes": 37827850,
+      "sha256": "01e64984bde19a32a71e9cac9022cd888549f4417a61d8d25ef2ae628d9d1309",
+      "group": "existing_release",
+      "records": 32628
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_webnlg_mkd/wikidata_train_qwen3_32B_webnlg_mkd_sub.jsonl",
+      "bytes": 37451227,
+      "sha256": "7ecfab9ba064e6f44f299d032012823af5df2692ea2facf2d3f89b8651a46575",
+      "group": "existing_release",
+      "records": 32628
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_zero_shot/dev_chat_format_zero_shot_as_paper_qwen3_32B_base.jsonl",
+      "bytes": 90237,
+      "sha256": "3ea3a1eaa9bbd21e158baf0db427d9f7df2a09c072dad04631aa32d4ba9becfb",
+      "group": "existing_release",
+      "records": 100
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_zero_shot/dev_chat_format_zero_shot_as_paper_qwen3_32B_mixed.jsonl",
+      "bytes": 55840021,
+      "sha256": "7aa9571e57053b0c70b7fc182fdaa77545bee69ccc8c60949cd47b1db66cc266",
+      "group": "existing_release",
+      "records": 65256
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_zero_shot/dev_chat_format_zero_shot_as_paper_qwen3_32B_pert.jsonl",
+      "bytes": 28087973,
+      "sha256": "57481cc1a52261e9f03240d2a4e2e0061e8f57a1d44b2c2227ec63188874693f",
+      "group": "existing_release",
+      "records": 32628
+    },
+    {
+      "path": "data/train/quintd/wikidata/qwen3_32B_zero_shot/dev_chat_format_zero_shot_as_paper_qwen3_32B_sub.jsonl",
+      "bytes": 27750243,
+      "sha256": "db66c276722d0ebf2ad6b2e241d03334f1cb8a64cab8bc07f237319524f20d6e",
+      "group": "existing_release",
+      "records": 32628
+    },
+    {
+      "path": "data/train/quintd5/gsmarena/gsmarena_dev_500_chat_format.jsonl",
+      "bytes": 1846514,
+      "sha256": "b823a913c932b9785ee16617a20de98f8e745fc4f2a673a5289dc031a695ba1c",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/gsmarena/qwen3_32B_zero_shot/gsmarena_dev_500_by_qwen3_32b_ZS.jsonl",
+      "bytes": 2372855,
+      "sha256": "36ae3525a1932ac07462dfec4efe72be3a99d4e35b7879689d99ff57e4f63da3",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/gsmarena/qwen3_sft_lora/gsmarena_dev_500_qwen3_32B_sft.jsonl",
+      "bytes": 2201281,
+      "sha256": "e352f04f31570ff7f350d14dc9d30d31cab158a1be9fe428a9d57b36149580e4",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/ice_hockey/ice_hockey_dev_500_chat_format.jsonl",
+      "bytes": 513965,
+      "sha256": "68279c9be7a347d612d9cbee52ed2ac3d5840b2000427cf26fb049c9aa338e36",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/ice_hockey/qwen3_32B_zero_shot/ice_hockey_dev_500_by_qwen3_32b_ZS.jsonl",
+      "bytes": 728779,
+      "sha256": "c82c7e7e3531c72a0099893173c88746f4fc01b7b0e924e230af97aef1c5d7d9",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/ice_hockey/qwen3_sft_lora/ice_hockey_dev_500_qwen3_32B_sft.jsonl",
+      "bytes": 632921,
+      "sha256": "d53200407bbe0c0759d72ff9b9674a472ba7443ab07153426b2dc42fb463dc8d",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/owid/owid_dev_500_chat_format.jsonl",
+      "bytes": 2649581,
+      "sha256": "353d6420b6f011f31dd3a788fb0b312851fa1a83db72c504cb12e1a9122be533",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/owid/qwen3_32B_zero_shot/owid_dev_500_by_qwen3_32b_ZS.jsonl",
+      "bytes": 2871268,
+      "sha256": "7e456acdbfd99754d2a6f0d789b6ce81758a21e802029650534ea063a7dbb0ee",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/owid/qwen3_sft_lora/owid_dev_500_qwen3_32B_sft.jsonl",
+      "bytes": 3155729,
+      "sha256": "85974a0be44ba04ec4e7d15efc164396417ee5d7d91229b0711016f91a9ae2bb",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/weather/qwen3_32B_zero_shot/weather_dev_500_by_qwen3_32b_ZS.jsonl",
+      "bytes": 6767987,
+      "sha256": "f6105c1332f8a22ada169b157eff0a223a1edf1c30932b58ec6381cabed572e2",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/weather/qwen3_sft_lora/weather_dev_500_qwen3_32B_sft.jsonl",
+      "bytes": 7346193,
+      "sha256": "69c9fc8f83b45d58e77f74146553b1fadd3a4f68e3b8ec76dd478ea93e117bcb",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/weather/weather_dev_500_chat_format.jsonl",
+      "bytes": 6392667,
+      "sha256": "1aa1001b07f959cd341e70a33e2b1854164c99ab1a7b65ab45359e178107ca0b",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/wikidata/qwen3_32B_zero_shot/wikidata_dev_500_by_qwen3_32b_ZS.jsonl",
+      "bytes": 451418,
+      "sha256": "1db97bc611c995867db63bbd3120ebb8dd45dd4533cd34b95b07464d13a966a2",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/wikidata/qwen3_sft_lora/wikidata_dev_500_qwen3_32B_sft.jsonl",
+      "bytes": 429531,
+      "sha256": "ee2292e85420ced5e4a95a102f8556f2dab953564b1f3475d104413824d24c20",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/quintd5/wikidata/wikidata_dev_500_chat_format.jsonl",
+      "bytes": 340793,
+      "sha256": "c831db44004ba1e6cedf0b6f719059e47484eaf380f89f8c54ebabc59e504427",
+      "group": "quintd5_training",
+      "records": 500
+    },
+    {
+      "path": "data/train/webnlg_dev_en.json",
+      "bytes": 4648850,
+      "sha256": "33ce258d46a4952bacfbacfef2041d5a98123d7d85a8cc6864f923a5fe1eed33",
+      "group": "existing_release"
+    },
+    {
+      "path": "data/train/webnlg_train_en.json",
+      "bytes": 37041206,
+      "sha256": "5447ad2bf685ab8660da72fded4f72dbea460e06486cd00175d7f63e9f1fc93b",
+      "group": "existing_release"
+    }
+  ]
+}

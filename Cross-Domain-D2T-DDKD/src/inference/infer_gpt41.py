@@ -14,7 +14,7 @@ Notes:
 import argparse
 import json
 import os
-import sys
+import tempfile
 import time
 from typing import List, Dict, Any
 
@@ -28,18 +28,37 @@ def load_jsonl(path: str) -> List[dict]:
 
 
 def save_jsonl(rows: List[dict], path: str) -> None:
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        for r in rows:
-            json.dump(r, f, ensure_ascii=False)
-            f.write("\n")
+    output_path = os.path.abspath(path)
+    output_dir = os.path.dirname(output_path) or "."
+    os.makedirs(output_dir, exist_ok=True)
+    temp_name = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=output_dir,
+            prefix=f".{os.path.basename(output_path)}.",
+            suffix=".tmp",
+            delete=False,
+        ) as f:
+            temp_name = f.name
+            for row in rows:
+                json.dump(row, f, ensure_ascii=False)
+                f.write("\n")
+        os.replace(temp_name, output_path)
+    finally:
+        if temp_name and os.path.exists(temp_name):
+            os.unlink(temp_name)
 
 
 def create_client() -> OpenAI:
     api_key = os.getenv("OPENROUTER_API_KEY")
     if not api_key:
         raise SystemExit("Environment variable OPENROUTER_API_KEY is not set.")
-    return OpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
+    return OpenAI(
+        base_url=os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+        api_key=api_key,
+    )
 
 
 def call_chat(
@@ -53,7 +72,7 @@ def call_chat(
     retries: int = 3,
     backoff: float = 2.0,
 ) -> str:
-    last_err = None
+    last_error_type = "unknown"
     for attempt in range(retries):
         try:
             resp = client.chat.completions.create(
@@ -74,10 +93,12 @@ def call_chat(
                     chunks.append(delta)
             return "".join(chunks)
         except OpenAIError as e:
-            last_err = e
+            last_error_type = type(e).__name__
             wait = backoff * (attempt + 1)
             time.sleep(wait)
-    raise last_err
+    raise RuntimeError(
+        f"OpenRouter request failed after {retries} attempts ({last_error_type})."
+    ) from None
 
 
 def infer_file(
@@ -95,6 +116,8 @@ def infer_file(
     outputs = []
     for i, item in enumerate(tqdm(data, desc="infer", unit="ex")):
         messages = item.get("messages", [])
+        if not isinstance(messages, list):
+            raise ValueError(f"Input row {i} must have a 'messages' list.")
         try:
             content = call_chat(
                 client=client,
@@ -108,8 +131,15 @@ def infer_file(
             if stream:
                 print(f"[stream] idx={i} => {content}")
         except Exception as e:
-            sys.stderr.write(f"[Error] idx={i}: {e}\n")
-            content = ""
+            raise RuntimeError(
+                f"Generation failed for input row {i} ({type(e).__name__}); "
+                "no output file was written."
+            ) from None
+        if not isinstance(content, str) or not content.strip():
+            raise RuntimeError(
+                f"Generation returned empty content for input row {i}; "
+                "no output file was written."
+            )
         outputs.append({"table_idx": i, "response": content})
 
     save_jsonl(outputs, output_path)
@@ -160,4 +190,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

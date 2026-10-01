@@ -1,21 +1,20 @@
-# !/bin/bash
+#!/usr/bin/env bash
+set -Eeuo pipefail
 
-# Eval with GPT-5.1
-python src/eval/LLM_eval_OpenRouter.py \
--i data/model_outputs/quintd/gsmarena/outputs/zero_shot/gsmarena_test_chat_format_gpt4.1_responses.jsonl \
--o data/model_outputs/quintd/gsmarena/eval_res/zero_shot/test_gsmarena_chat_format_gpt4.1_gpt-5.1.jsonl \
---input_table data/test/quintd/gsmarena/test_input_table.jsonl \
--m openai/gpt-5.1 \
--c src/eval/eval_prompt_config.yaml \
--d quintd_gsmarena_test \
--n openai/gpt-5.1 \
+# Run faithfulness judging through OpenRouter. Results are written separately
+# from the archived paper outputs.
+# Required: INPUT_FILE, INPUT_TABLE, OUTPUT_FILE, MODEL, OPENROUTER_API_KEY.
+: "${INPUT_FILE:?Set INPUT_FILE to the generated response JSONL}"
+: "${INPUT_TABLE:?Set INPUT_TABLE to the matching formatted-input JSONL}"
+: "${OUTPUT_FILE:?Set OUTPUT_FILE (for example, results/judge_output.jsonl)}"
+: "${MODEL:?Set MODEL to an OpenRouter model identifier}"
+: "${OPENROUTER_API_KEY:?Export OPENROUTER_API_KEY before evaluation}"
 
-# Eval with Gemini 2.5-pro
 python src/eval/LLM_eval_OpenRouter.py \
--i data/model_outputs/quintd/gsmarena/outputs/ddkd_zero_shot/gsmarena_test_gemma3_1b_it_ZS_mixed_responses.jsonl \
--o data/model_outputs/quintd/gsmarena/eval_res/ddkd_zero_shot/test_gsmarena_gemma3_1b_it_ZS_mixed_gemini2.5-pro.jsonl \
---input_table data/test/quintd/gsmarena/test_input_table.jsonl \
--m google/gemini-2.5-pro \
--c src/eval/eval_prompt_config.yaml \
--d quintd_gsmarena_test \
--n google/gemini-2.5-pro \
+  --input_file "$INPUT_FILE" \
+  --input_table "$INPUT_TABLE" \
+  --output_file "$OUTPUT_FILE" \
+  --model "$MODEL" \
+  --config "${CONFIG:-src/eval/eval_prompt_config.yaml}" \
+  --dataset_name "${DATASET_NAME:-quintd}" \
+  --model_name "${MODEL_NAME:-$MODEL}"

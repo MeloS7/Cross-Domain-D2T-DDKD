@@ -1,0 +1,64 @@
+system_msg: "You are an expert evaluator for data-to-text generation. Your job is to judge CONTENT COVERAGE only (i.e., omissions / missing content), not fluency or style."
+prompt_template: |
+  Task flag:
+  - DOMAIN = {DOMAIN}
+  - Generation goal (task hint):
+    - Wikidata: Structured entity description (entity profile; aim for completeness).
+    - Ice Hockey: Event-based game summary (cover teams, score, key stats/events).
+    - OpenWeather: Time-series weather forecast reporting (cover location/time range and salient conditions/extremes/trends).
+    - GSM Arena: Entity-centric specification description (cover key specs and distinguishing attributes).
+    - OWID: Chart captioning from tabular data (cover what is measured, where/when, and salient numeric patterns/trends).
+
+  Rules:
+  - If DOMAIN = Wikidata, treat ALL input facts as important and judge completeness.
+  - Otherwise, judge coverage over important content consistent with the generation goal above.
+
+  [Input structured data]
+  <<<
+  {INPUT_DATA}
+  >>>
+
+  [Generated text]
+  <<<
+  {GEN_TEXT}
+  >>>
+
+  Task:
+  Rate how well the generated text covers the IMPORTANT content in the input data.
+
+  General rules:
+  - Focus on content coverage only. Ignore writing quality, grammar, and minor paraphrasing differences.
+  - Do NOT reward verbosity. A longer text is not better unless it covers more important content.
+  - If the text repeats the same fact multiple times, count it once.
+  - If the input contains many rows/measurements (e.g., long numeric tables), evaluate whether the text covers:
+    (i) what the data is about (metadata such as metric/topic/region/time range, when present), and
+    (ii) the most salient numeric patterns (e.g., latest value, max/min, notable change/trend),
+    rather than exhaustive row-by-row coverage.
+  - For DOMAIN=Wikidata, do NOT apply the “salient only” rule: assume all provided facts are important by default.
+
+  Provide:
+  1) A coverage score from 1 to 5 using the rubric below (use BOTH the verbal description and the approximate proportion as guidance).
+  2) An estimated coverage ratio in [0,1] consistent with your score:
+    - For DOMAIN=Wikidata: proportion of ALL input facts that are expressed in the text.
+    - For other domains: proportion of IMPORTANT content points (salient points) expressed in the text.
+    This is an approximate estimate; you do not need to count perfectly.
+  3) Up to 3 most important missing points (each <= 20 words).
+  4) For each missing point, mark whether it is ABSENT or only PARTIAL (implied but missing key detail such as number/date/entity).
+
+  Rubric (score + approximate proportion):
+  - 5: Almost all important content is covered; no notable omissions. (~90-100% covered)
+  - 4: Most important content is covered; a few omissions or missing key details. (~70-90% covered)
+  - 3: Some important content is covered, but several key omissions. (~40-70% covered)
+  - 2: Little important content is covered; most key information omitted. (~10-40% covered)
+  - 1: No meaningful coverage (empty/degenerate/off-topic). (<10% covered)
+
+  Output JSON only (no extra text):
+  {{
+    "domain": "{DOMAIN}",
+    "coverage_score": 1-5,
+    "estimated_coverage_ratio": 0.0-1.0,
+    "missing_points": [
+      {{"point": "...", "status": "ABSENT|PARTIAL"}}
+    ],
+    "notes": "one-sentence justification focused on coverage"
+  }}

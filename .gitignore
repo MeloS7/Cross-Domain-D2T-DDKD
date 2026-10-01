@@ -207,6 +207,15 @@ marimo/_lsp/
 __marimo__/
 
 Cross-Domain-D2T-DDKD/data/
+Cross-Domain-D2T-DDKD/results/
+Cross-Domain-D2T-DDKD/.ckpt/
+.env.*
+!.env.example
+*.out
+*.err
+.wandb/
+.codex/
+.agents/
 
 # Ignore macOS system files (.DS_Store)
 .DS_Store
